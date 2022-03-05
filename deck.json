@@ -1,0 +1,2404 @@
+{
+    "__type__": "Deck",
+    "children": [
+        {
+            "__type__": "Deck",
+            "children": [],
+            "crowdanki_uuid": "ef42a4db-9c1a-11ec-af94-d17075e88979",
+            "deck_config_uuid": "e7b6a329-9c1a-11ec-af94-d17075e88979",
+            "desc": "",
+            "dyn": 0,
+            "extendNew": 0,
+            "extendRev": 0,
+            "media_files": [],
+            "name": "ecuaciones diferenciales",
+            "notes": [
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Ecuación Bernoulli",
+                        "Una ecuación Bernoulli es de la forma<br>$$<br>y'+a(x)y+b(x)y^\\alpha=0<br>$$<br>Esta se resuelve realizando un cambio de variable <br>$$<br>y^{1-\\alpha}=z <br><div style=\"text-align: justify;\">\\rightarrow (1-\\alpha)y^{-\\alpha}\\frac{dy}{dx}=\\frac{dz}{dx}<br></div>$$<br>Esto nos deja<br>\\begin{align*}<br>y'+a(x)y+b(x)y^\\alpha&amp;=0\\\\<br>y^{-\\alpha}y' + a(x)y^{1-\\alpha} + b(x) &amp;= 0\\\\<br>\\frac{1}{1-\\alpha}\\frac{dz}{dx}+a(x)z +b(x) &amp;= 0<br>\\end{align*}<br>La última siendo una ecuación diferencial lineal de primer orden<br>",
+                        ""
+                    ],
+                    "guid": "Bn6dIx}FI|",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Ecuación Riccati",
+                        "La ecuación Riccati es de la forma<br>$$<br>y' + a(x)y +b(x)y^2 = c(x)<br>$$<br>En este tipo de ecuación es necesario conocer una solución $y_p$ para realizar el cambio de variable<br>$$<br>y = y_p + z<br>$$<br>Al realizar la sustitución y simplificar obtenemos<br>$$<br>z' +&nbsp; [a(x)+2y_p]z + b(x)z^2 = 0<br>$$<br>La cuál es una ecuación Bernoulli",
+                        ""
+                    ],
+                    "guid": "BzNxmf#e+v",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Ecuación Clairaut",
+                        "La ecuación Clairaut es de la forma<br>$$<br>y = xy' + f(y')<br>$$<br>Al realizar el cambio de variable $y' = z$ obtenemos<br>$$<br>y = xz + f(z)<br>$$<br>Si derivamos respecto de x obtenemos&nbsp;<br>\\begin{align*}<br>y' &amp;= z + xz' + f'(z)z'\\\\<br>z &amp;= z + z'[x+f'(z)]\\\\<br>0 &amp;= z'[x + f'(z)]\\\\<br>\\end{align*}<br>Lo anterior implica $z'=0$, $x+f'(z)=0$ resolviendo estos dos casos obtenemos las soluciones",
+                        ""
+                    ],
+                    "guid": "Pa|S7wpxnu",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Cambio de variable y ecuaciones diferenciales homogéneas",
+                        "Una función homogénea es aquella que cumple<br>$$<br>f(xt,yt) = t^n f(x,y)<br>$$<br>Luego una ecuación diferencial&nbsp;<br>$$<br>M(x,y)dx + N(x,y)dy = 0<br>$$<br>Se puede resolver realizando el cambio de variable <br>$$<br>y = xu \\rightarrow \\frac{dy}{dx} = u + x\\frac{du}{dx}<br>$$",
+                        ""
+                    ],
+                    "guid": "hz;FI!eseL",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Ecuación diferencial de variables separables",
+                        "Sea la ecuación diferencial&nbsp;<br>$$<br>M(x,y) + N(x,y)\\frac{dy}{dx}=0<br>$$<br>Si podemos transfroma esta ecuación en una de la forma<br>$$<br>f(y)\\frac{dy}{dx} = g(x)<br>$$<br>podemos resolverla haciendo<br>\\begin{align*}<br>\\int f(y)\\frac{dy}{dx} dx &amp;= \\int g(x)dx\\\\<br>\\Rightarrow \\int f(t) dt &amp;= \\int g(x)dx<br>\\end{align*}",
+                        ""
+                    ],
+                    "guid": "CB!UclgW<8",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Teorema de existencia y unicidad para ecuaciones diferenciales lineales",
+                        "Sea $p,g\\in C^1$ en $\\alpha &lt; x &lt; \\beta$\\\\<br>$x_0 \\in (\\alpha, \\beta)$\\\\<br>$\\Rightarrow$ $\\exists ! y$ : $y'+py =g$, $y(x_0)=y_0$",
+                        ""
+                    ],
+                    "guid": "d&ktZ3:t2H",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Teorema de existencia y unicidad para ecuaciones diferenciales no lineales",
+                        "Sea $f(x,y)$, $\\frac{\\partial f}{\\partial y} \\in C^2$ en $R = (\\alpha,\\beta)\\times (\\gamma, \\delta)$\\\\<br>$(x_0,y_0)\\in R$\\\\<br>$\\Rightarrow \\exists ! y:$&nbsp; $y' =f(x,y)$, $y(x_0)=y_0$ en $|x-x_0|&lt;h$",
+                        ""
+                    ],
+                    "guid": "Ph]nT`vGO<",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Ecuaciones diferenciales exactas",
+                        "Sea $y=y(x)$ y $\\phi(x,y)=\\phi(x,y(x))$ entonces una ecuación diferencial resulta de&nbsp;<br>\\begin{align*}<br>\\frac{\\partial}{\\partial x} [ \\phi(x,y) &amp;= k ]\\\\<br>\\frac{\\partial \\phi}{\\partial x} + \\frac{\\partial \\phi}{\\partial y} \\frac{dy}{dx} &amp;= 0\\\\<br>M(x,y) + N(x,y) \\frac{dy}{dx} &amp;= 0<br>\\end{align*}<br>Es por ello que buscamos $\\phi(x,y)$: $\\frac{\\partial \\phi}{\\partial x} = M(x,y)$, $\\frac{\\partial \\phi}{\\partial y} = N(x,y)$",
+                        ""
+                    ],
+                    "guid": "Dy`w2kajY0",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Factor integrante de una ecuación diferencial lineal de primer orden",
+                        "Sea la ecuación diferencial lineal $y'+py=g$<br>Buscamos $\\mu$: $\\mu y' + \\mu py = (\\mu y)' = \\mu' y + \\mu y'$<br>$$<br>\\Rightarrow \\mu' = \\mu p \\Rightarrow \\frac{\\mu'}{\\mu}=p \\Rightarrow ln |\\mu| = \\int p(x)dx<br>$$<br>con lo cual obtenemos que&nbsp;<br>$$<br>\\mu(x) = e^{\\int p(x)dx}<br>$$",
+                        ""
+                    ],
+                    "guid": "Dh[m|qAX~<",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Factor integrante de $\\mu$ para convertir a ecuación diferencial exacta",
+                        "Sea la ecuación diferencial<br>$$<br>M(x,y)dx + N(x,y)dy = 0<br>$$<br>Si tenemos que&nbsp;<br>$$<br>\\frac{\\partial M}{\\partial y} \\neq \\frac{\\partial X}{\\partial x}<br>$$<br>Podemos encontrar $\\mu$ tal que<br>$$<br>\\mu M(x,y)dx + \\mu N(x,y)dy = 0<br>$$<br>sea una ecuación diferencial exacta. Esto implicaría que<br>\\begin{align*}<br>\\frac{\\partial \\mu M}{\\partial y} &amp;= \\frac{\\partial \\mu X}{\\partial x}\\\\<br>\\leftrightarrow \\mu_y M + \\mu M_y - \\mu_x N - \\mu N_x &amp;= 0<br>\\end{align*}<br>Si encontramos $\\mu$ podremos resolver la ecuación original por ecuación exacta",
+                        ""
+                    ],
+                    "guid": "D8GMY@2@uF",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Factor integrante $\\mu$ dependiente de una sola variable",
+                        "En el caso del factor integrante para convertir a una ecuación diferencial exacta, tenemos que si en la ecuación<br>$$<br>\\mu_y M + \\mu M_y - \\mu_x N - \\mu N_x = 0<br>$$<br>O bien $\\mu = \\mu(x)$ o $\\mu = \\mu(y)$ el factor integrante se puede encontrar por ser la anterior una ecuación&nbsp;<br>diferencial lineal de primer orden. Esto sucede si&nbsp;<br>$$<br>\\frac{N_x-M_y}{N} = f(x) \\quad o \\quad \\frac{M_y-N_x}{M} = f(y)<br>$$",
+                        ""
+                    ],
+                    "guid": "J>[nAhAHIR",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Principio de superposición",
+                        "Sea $\\{ y_i\\}_{i=1}^n$ soluciones de<br>$$<br>\\sum_{i=0}^n a_i(x)y^{(i)} = 0<br>$$<br>$$<br>\\Rightarrow \\sum_{i=1}^n c_i y_i&nbsp;<br>$$<br>es solución de la ecuación diferencial",
+                        ""
+                    ],
+                    "guid": "db$AHz5PXr",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Ecuación diferenciales exactas de segundo orden ",
+                        "Se dice que la ecuación<br>$$<br>P(x)y'' + Q(x)y' + R(x)y = 0<br>$$<br>es exacta, si puede escribirse en la forma<br>$$<br>[P(x)y']' + [f(x)y]' = 0<br>$$<br>Al integrar ambos lados obtenemos una ecuación diferencial lineal de primer orden<br>$$<br>P(x)y' + f(x)y = \\kappa<br>$$",
+                        ""
+                    ],
+                    "guid": "lJCM8<ElCY",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Wronskiano",
+                        "$$<br>W[y_1,...,y_n] = \\begin{bmatrix}<br>y_1 &amp; y_2 &amp; \\dots &amp; y_n \\\\<br>y_1' &amp; y_2' &amp; \\dots &amp; y_n' \\\\<br>\\vdots &amp; \\vdots &amp; \\ddots &amp; \\vdots \\\\<br>y_1^{(n)} &amp; y_2^{(n)}&nbsp;&amp; \\dots &amp; y_n^{(n)}&nbsp;\\\\<br>\\end{bmatrix}<br>$$",
+                        ""
+                    ],
+                    "guid": "y_Z/PX2::K",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Sistema fundamental de soluciones",
+                        "Sea $\\{y_i\\}_{i=1}^n$ soluciones de&nbsp;<br>$$<br>\\sum_{i=0}^n a_i(x) y^{(i)} = 0<br>$$<br>decimos que $\\{y_i\\}_{i=1}^n$ es un sistema fundamental de soluciones si cualquier $y(x)$,&nbsp;<br>solución de la ecuación diferencial se puede escribir como la combinación lineal<br>$$<br>y(x) = \\sum_{i=0}^n c_i y_i<br>$$",
+                        ""
+                    ],
+                    "guid": "u0<QlyYoj&",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                }
+            ]
+        },
+        {
+            "__type__": "Deck",
+            "children": [],
+            "crowdanki_uuid": "ede5474a-9c1a-11ec-af94-d17075e88979",
+            "deck_config_uuid": "e7b6a329-9c1a-11ec-af94-d17075e88979",
+            "desc": "",
+            "dyn": 0,
+            "extendNew": 0,
+            "extendRev": 0,
+            "media_files": [],
+            "name": "filosofia y letra",
+            "notes": [
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Gnoseología",
+                        "Gnoseología o teoría del conocimiento proviene de gnosis que significa conocimiento.<br><br>Es la rama de la filosofía encarga del estudio de los diferentes tipos de saberes (empíro, práctico, teórico, sabiduría, fé, etc.). En cada uno, estudia sus diferencias, formas de relacionarse sujeto-objeto, su esencia, su alcance, sus posibilidades y los límites de estas",
+                        ""
+                    ],
+                    "guid": "t?hb?A6I;U",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Epistemología",
+                        "Epistemología proviene de episteme(ciencia) y logos(discurso).&nbsp;<br><br>También llamada filosofía de la ciencia, es la rama de la gnoseología encargada de estudiar el conocimiento científico. Se pregunta entre otras cosas la esencia, límites, procedimientos, métodos, características de un conocimiento científico.",
+                        ""
+                    ],
+                    "guid": "COe.?rb62*",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Sino vs si no",
+                        "Sino: conjunción adversativa, une dos ideas opuestas<br><br>Si no: condicional negativa,&nbsp; establece relación causa-efecto",
+                        ""
+                    ],
+                    "guid": "gqY_ro_V<C",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                }
+            ]
+        },
+        {
+            "__type__": "Deck",
+            "children": [],
+            "crowdanki_uuid": "e7b6a328-9c1a-11ec-af94-d17075e88979",
+            "deck_config_uuid": "e7b6a329-9c1a-11ec-af94-d17075e88979",
+            "desc": "",
+            "dyn": 0,
+            "extendNew": 0,
+            "extendRev": 0,
+            "media_files": [
+                "paste-1718c00f24a160a5be9f78b91a1e07fe2c7dd6ff.jpg",
+                "paste-642ddf75ae2849dab87bc71733f668c76018f07c.jpg",
+                "paste-a61c72079c303271492a99cda60af9087b9d4d33.jpg",
+                "paste-d8c87a865ee1aad35e2cd84c664ac15f8a26c9b0.jpg",
+                "paste-e17f854fccaa5fc2fd6f5bd7b51aa2ae5e867bf3.jpg",
+                "paste-fe264c81d837e59a58aaf69f91e31cb33c2d6473.jpg"
+            ],
+            "name": "geom comp",
+            "notes": [
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Polygon",
+                        "Let $V = \\{v_0,v_1,...,v_n-1\\}$ vertices of P<br><br>Let $E = \\{e_0,e_1,...,e_n-1\\} $ edges of P $e_i = v_i v_{i+1}$<br><br>P has n vertices. This segments bound a polygon iff<br><br>\\begin{itemize}<br>\\item&nbsp; $e_i \\cap e_{i+1} = v_{i+1}\\quad \\forall i = 0,1,...,n-1$<br>\\item $e_i \\cap e_{j} = \\emptyset \\quad \\forall i\\neq j+1$<br>\\end{itemize}",
+                        ""
+                    ],
+                    "guid": "N-PsGlTzen",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Jordan Curve Theorem",
+                        "Simple: The boundary $\\partial P$ doesn't intersect with itself unless vertices.<br><br>Close: All edges connect with the procedent and predecesor.<br><br>Any simple closed curve divide the plane in two componentes (interior and exterior)",
+                        ""
+                    ],
+                    "guid": "P`e,r%qUzE",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Art Gallery problem",
+                        "Given a polygon in the plane. How many guards are needed to \"see\" every point in the art gallery?<br><br>We say $x$ can see $y$ if $xy \\subset P$<br><br>We say $x$ has clear visibility to $y$ if $xy \\subset P$, $xy \\cap \\partial P \\subset \\{x,y\\}$<br><br>A set of guards is said to cover a polygon if every point in $P$ is visible from some guard",
+                        ""
+                    ],
+                    "guid": "e[ijB^IvqO",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Art gallery problem's solution",
+                        "Let <br>$$g(P) = min_S \\{|S|: \\text{S covers P}\\}$$<br>$$G(n) = max_{P_n} g(P_n)$$<br>We want to know the maximum number of guards needed to cover \\textbf{any} polygon of n vertices.<br><br>$$G(n) = \\lfloor \\frac{n}{3} \\rfloor$$<br>Proof:<br>\\begin{enumerate}<br>\\item Triangulate P<br>\\item This triangulation is 3-colored graph<br>\\item Assigning guards to all vertices of one color covers the polygon<br>\\item Pigeon hole principle, pigeons are vertices, holes are colors<br>\\end{enumerate}<br>At least one color has $\\exists c_i &lt;\\frac{n}{3} \\Rightarrow \\exists c_i \\le \\lfloor \\frac{n}{3} \\rfloor&nbsp;$",
+                        ""
+                    ],
+                    "guid": "op]x@u=<wI",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Pigeon hole principle",
+                        "If n pigeons are placed into k holes, then exists at least one hole such that contains $n_i \\le \\frac{n}{k}$. <br><br>There are $n = \\sum_i n_i$ pigeons and $n_i \\quad i = 1, 2, ..., k$ are the number of pigeons placed at hole i.<br><br>$$\\exists n_i: n_i \\le \\frac{n}{k}$$<br>Suppose&nbsp;<br>$$\\forall n_i: n_i &gt; \\frac{n}{k}$$<br>then<br>$$n = \\sum_i n_i &gt; k\\cdot \\frac{n}{k} =n$$<br>This is a contradiction $n&gt;n$.",
+                        ""
+                    ],
+                    "guid": "HM4@SxT8/$",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Every polygon must have a strictly convex vertex",
+                        "Take the lowest to the right vertex. It's angle cannot be greater than $\\pi$, otherwise would not be the lowest right vertex.",
+                        "<img src=\"paste-a61c72079c303271492a99cda60af9087b9d4d33.jpg\">"
+                    ],
+                    "guid": "Nys=mhfF+a",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Every polygon of $n\\ge 4$ vertices has a diagonal",
+                        "Let $v$ be a convex vertex (every polygon has at least one).<br><br>If ab is diagonal. Done<br><br>else $\\exists x \\subset \\Delta avb$ such that <br>$$x = argmin_{x_i} \\{ ||x_i-x|| ^ 2 : x_i \\in V_P\\}$$<br>x is the closest point to v and is ther first point hits a line move from bottom to top. xv is a diagonal",
+                        "<img src=\"paste-642ddf75ae2849dab87bc71733f668c76018f07c.jpg\">"
+                    ],
+                    "guid": "g2/QuBB8P%",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Polygon partitions (triangles and diagonals)",
+                        "Every polygon can be partitioned by triangles adding diagonals. For $n=3$ it's done. Applying induction for $n\\ge 4$ can be proved.<br><br>There exists multiple triangulations, all having $n-2$ triangles and $n-3$ diagonals.<br><br>Let $d$ parted $P$ into $P_1, P_2$ with $n_1, n_2$ vertices each one. $n_1+n_2 = n + 2 $ due double count $a,b$<br><br>$P_1$ has $n_1-3$ diagonals<br><br>$P_2$ has $n_2-3$ diagonals<br><br>Therefore&nbsp; P has $n_1+n_2 - 6 + 1 = n - 3$ diagonals , counting $d=ab$.<br><br><br>$P_1$ has $n_1-2$ triangles<br><br>$P_2$ has $n_2-2$ triangles<br><br>Therefore&nbsp; P has $n_1+n_2 - 4= n - 2$.",
+                        "<img src=\"paste-d8c87a865ee1aad35e2cd84c664ac15f8a26c9b0.jpg\">"
+                    ],
+                    "guid": "m]e-kvxY?z",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Angles in a polygon",
+                        "There are $(n-2)$&nbsp; triangles for $P$ with $n$ vertices, each triangle has $\\pi$ radians. Then $P$ has $(n-2)\\pi$ radians.",
+                        ""
+                    ],
+                    "guid": "r1hlFV>kb5",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Triangulation dual",
+                        "Triangulation of a polygon<br>\\begin{itemize}<br>\\item Each triangle represented by a vertex<br>\\item Two vertex are connected iff they share a side<br>\\end{itemize}<br>Note that for any triangle $deg(\\Delta xyz) \\le 3$<br><br>The dual T is a tree with each node of degree at most 3.<br><br>A tree is a connected graph with no cycles. If dual T has a cycle, then it has a vertex inside P and therefore is not simple.<br><br>Every triangulation is 3-colorable.",
+                        "<img src=\"paste-fe264c81d837e59a58aaf69f91e31cb33c2d6473.jpg\">"
+                    ],
+                    "guid": "wOZf>9UyK?",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Clear visibility from x to y",
+                        "Let $P$ be a polygon, we say that $x\\in P$ clearly see $y\\in P$ if $xy\\subset P$ and $xy \\cap \\partial P \\subset \\{x,y\\}$",
+                        ""
+                    ],
+                    "guid": "QG#]C`rhD",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Ear and mouth",
+                        "A vertex $x_i$ in a polygon $P$ is called an ear if diagonal $x_{i-1} x_{i+1}\\subset P$.(B)<br><br>A vertex $x_i$ in a polygon $P$ is called an ear if diagonal $x_{i-1} x_{i+1}\\subset P^C$. (C)",
+                        "<img src=\"paste-1718c00f24a160a5be9f78b91a1e07fe2c7dd6ff.jpg\">"
+                    ],
+                    "guid": "f8li}l]-v?",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Meister's two ears theorem",
+                        "Every polygon of $n\\ge 4$ has at least two nonoverlapping ears.<br><br>A leaft node in the triangulation dual corresponds to an ear. A tree must have at least two leaves.",
+                        ""
+                    ],
+                    "guid": "m(VH_!TOu-",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "3-colorable proof of triangulation",
+                        "Since every triangulation dual is a tree an has at two ears for $n \\ge 4$, we can remove one ear to get a $n-1$ polygon, by induction this can be prove. By adding the removed ear coloring it with a different color than its&nbsp;",
+                        "<img src=\"paste-e17f854fccaa5fc2fd6f5bd7b51aa2ae5e867bf3.jpg\"><br>Coloring A red, B and C green, and E,D,G,F blue. Any triangulation can be represented as a binary tree."
+                    ],
+                    "guid": "Q!!W$1UMSo",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                }
+            ]
+        },
+        {
+            "__type__": "Deck",
+            "children": [],
+            "crowdanki_uuid": "e7b6a36c-9c1a-11ec-af94-d17075e88979",
+            "deck_config_uuid": "e7b6a329-9c1a-11ec-af94-d17075e88979",
+            "desc": "",
+            "dyn": 0,
+            "extendNew": 0,
+            "extendRev": 0,
+            "media_files": [],
+            "name": "julia",
+            "notes": [
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Julia numeric primitives",
+                        "\\begin{itemize}<br>\\item Int8 Int16 Int32 Int64 Int128<br>\\item UInt8 UInt16 UInt32 UInt64 UInt128<br>\\item Float16 Float32 Float64<br>\\item Bool<br>\\item typemin(x) typemax(x) :&nbsp; min and max representable values of type x<br>\\item bitstring(x) : bit representation of variable x<br>\\end{itemize}<br>",
+                        ""
+                    ],
+                    "guid": "oodjZ_Ozyn",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Arbitrary precision arithmetic",
+                        "\\begin{itemize}<br>\\item BigInt BigFloat<br>\\item parse(x, y) : parse y (can be a string) to type x, specially usefull to parse very long numbers<br>\\item big\"12345678944...536135\"&nbsp; : parse string directly to Big type<br>\\item setrounding()<br>\\item setprecision()<br>\\end{itemize}",
+                        ""
+                    ],
+                    "guid": "dp$GJr8hGq",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Other numeric types",
+                        "\\begin{itemize}<br>\\item Complex<br>\\item Rational<br>\\item Irrational<br>\\item Inf, -Inf : a number greater(less) than any other number<br>\\item Nan: a number different than any number,&nbsp; usefull for not defined expression like 0/0<br>\\end{itemize}",
+                        ""
+                    ],
+                    "guid": "xyil^3M^h;",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Julia style-guide",
+                        "\\begin{itemize}<br>\\item Julia discorage to use \"\\_\" unless necesarry to define objects<br>\\item varnames : lowercase without \"\\_\"<br>\\item functions and marcros: lowercase without \"\\_\"<br>\\item types and modules: CamelCase&nbsp;<br>\\end{itemize}",
+                        ""
+                    ],
+                    "guid": "fg7[,|n%*4",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Julia basic command line",
+                        "\\begin{itemize}<br>\\item julia --help<br>\\item .julia/config/startup.jl&nbsp; :&nbsp; &nbsp;run before open REPL<br>\\item ARGS&nbsp; :&nbsp; params passed through command line<br>\\item PROGRAM\\_FILE :&nbsp; filename of executed program<br>\\end{itemize}",
+                        ""
+                    ],
+                    "guid": "s)?5l4rIYG",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Latex and Julia",
+                        "\\textbackslash theta&nbsp;+ TAB $\\mapsto \\theta$<br><br>\\textbackslash&nbsp;hat + TAB + \\textbackslash&nbsp;theta + TAB&nbsp; $\\mapsto \\hat{\\theta}$<br>",
+                        ""
+                    ],
+                    "guid": "sV$G?lD},z",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Assignment, multiplication, machine epsilon",
+                        "\\begin{itemize}<br>\\item left-values, right-values, see code<br>\\item machine epsilon : distance between 1 and next representable number<br>\\end{itemize}",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3\n4</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">xff, _ <span style=\"color: #666666\">=</span> <span style=\"color: #666666\">2</span>,<span style=\"color: #666666\">3</span>\n<span style=\"color: #666666\">2</span>xff  <span style=\"color: #408080; font-style: italic\"># 4</span>\n<span style=\"color: #666666\">0xff</span>  <span style=\"color: #408080; font-style: italic\"># 0xff</span>\neps(<span style=\"color: #B00040\">Float32</span>)\n</pre></div>\n</td></tr></tbody></table></center><br>"
+                    ],
+                    "guid": "n;mds@[7u7",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Julia considerations on 32 and 64 bit machine&nbsp;",
+                        "\\begin{itemize}<br>\\item Int = Int64 if 64 bit machine else Int32<br>\\item Sys.WORD\\_SIZE<br>\\end{itemize}",
+                        ""
+                    ],
+                    "guid": "qz$}:t:zq3",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Define an array with elements 1,2,3,4,5 and save it to \"array\"",
+                        ".",
+                        "array = [1,2,3,4,5]"
+                    ],
+                    "guid": "Qc6&Dp0<-X",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Get the first element of \"array\"",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">array <span style=\"color: #666666\">=</span> [<span style=\"color: #666666\">1</span>,<span style=\"color: #666666\">2</span>,<span style=\"color: #666666\">3</span>,<span style=\"color: #666666\">4</span>,<span style=\"color: #666666\">5</span>,<span style=\"color: #666666\">6</span>]\n</pre></div>\n</td></tr></tbody></table></center>",
+                        "array[1]"
+                    ],
+                    "guid": "JN]G,}xGU[",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Get the length of \"array\"",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">array <span style=\"color: #666666\">=</span> [<span style=\"color: #666666\">1</span>,<span style=\"color: #666666\">2</span>,<span style=\"color: #666666\">3</span>,<span style=\"color: #666666\">4</span>,<span style=\"color: #666666\">5</span>,<span style=\"color: #666666\">6</span>]\n</pre></div>\n</td></tr></tbody></table></center><br>",
+                        "length(array)"
+                    ],
+                    "guid": "L;t2Jp5s5~",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Define a function called \"f\" with params x,y which return x+y",
+                        ".",
+                        "function f(x,y)<br>&nbsp; &nbsp; return x+y<br>end"
+                    ],
+                    "guid": "q^dN*71&]o",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Print a line with \"hello\" if $x&lt;y$",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">x <span style=\"color: #666666\">=</span> <span style=\"color: #666666\">9</span>\ny <span style=\"color: #666666\">=</span> <span style=\"color: #666666\">12</span>\n</pre></div>\n</td></tr></tbody></table></center><br>",
+                        "if x&lt;y<br>&nbsp; &nbsp; println(\"hello\")<br>end"
+                    ],
+                    "guid": "ylHMjclGOq",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Print less, equals or more depending on x relation with y<br>",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">x <span style=\"color: #666666\">=</span> <span style=\"color: #666666\">10</span>\ny <span style=\"color: #666666\">=</span> <span style=\"color: #666666\">20</span>\n</pre></div>\n</td></tr></tbody></table></center><br>",
+                        "if x&lt;y<br>&nbsp; &nbsp; println(\"less\")<br>elseif x==y<br>&nbsp; &nbsp; println(\"equals\")<br>else<br>&nbsp; &nbsp; println(\"more\")<br>end"
+                    ],
+                    "guid": "cKx*<d.?VE",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Concatenate x and y",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">x <span style=\"color: #666666\">=</span> <span style=\"color: #BA2121\">\"Hello, \"</span>\ny <span style=\"color: #666666\">=</span> <span style=\"color: #BA2121\">\"World!\"</span>\n</pre></div>\n</td></tr></tbody></table></center><br>",
+                        "x*y"
+                    ],
+                    "guid": "sPA(O&P<mD",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Which type is x?",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">x <span style=\"color: #666666\">=</span> <span style=\"color: #666666\">98978</span>\n</pre></div>\n</td></tr></tbody></table></center><br>",
+                        "typeof(x)"
+                    ],
+                    "guid": "m@Y[udvd9|",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Comment \"hello\"",
+                        ".",
+                        "#hello"
+                    ],
+                    "guid": "xm$:_gol{l",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Create an array (1,2,3,4) of type Float64",
+                        ".",
+                        "Float64[1,2,3,4]"
+                    ],
+                    "guid": "Lift<[h(uV",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Create an array of functions and save it to array",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">f(x,y) <span style=\"color: #666666\">=</span> x<span style=\"color: #666666\">^</span>y\ng(x,y) <span style=\"color: #666666\">=</span> x<span style=\"color: #666666\">^2</span> <span style=\"color: #666666\">+</span> y<span style=\"color: #666666\">^2</span>\nh(x,y) <span style=\"color: #666666\">=</span> <span style=\"color: #666666\">2</span>x<span style=\"color: #666666\">+3</span>y\n</pre></div>\n</td></tr></tbody></table></center>",
+                        "[f,g,h]"
+                    ],
+                    "guid": "m+gPx5OV.V",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Create a vector/array of size 4x1 with values (1,2,3,4)",
+                        ".",
+                        "[1,2,3,4]"
+                    ],
+                    "guid": "zA3Ck~??uG",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Create a vector/array of size 1x4 with values (1,2,3,4) and save it to array",
+                        ".",
+                        "array = [1 2 3 4]"
+                    ],
+                    "guid": "dkz*jk)!j4",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Create a vector/array of size 2x2 with values (1,2,3,4)",
+                        "Semicolon ( ; ) concatenates vertically",
+                        "[1 2; 3 4]"
+                    ],
+                    "guid": "J+VNNLaI>5",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Create a vector/array of size 40x1 of values from 1 to 40",
+                        ".",
+                        "[1:40;]"
+                    ],
+                    "guid": "cO^Wwat5lF",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Create a matrix of size 10x2 with columns 1:10 and 11:20 and save it to array",
+                        ".",
+                        "array = [1:10 11:20]"
+                    ],
+                    "guid": "G,x9v+zR<8",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Create a matrix of Int8 zeros of size 20x20",
+                        ".",
+                        "zeros(Int8,(20,20))"
+                    ],
+                    "guid": "t^)}S=Y{>x",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Create an inline function x+y",
+                        ".",
+                        "f(x,y) = x+y"
+                    ],
+                    "guid": "M[95.)OVC^",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "&nbsp;Create a function $f(x,y)=\\frac{x+y}{x^2+1}$ which takes two Integers and returns a Float64 inline",
+                        ".",
+                        "f(x::Integer,y::Integer)::Float64 = (x+y)/(x^2+1)"
+                    ],
+                    "guid": "x_1K<z[eP/",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Create a vector 10x1 with square values from 1 to 10, using map",
+                        ".",
+                        "map(x-&gt;x^2,[1:10;])"
+                    ],
+                    "guid": "t9$z23|n9,",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Create a vector with values $z = f(x,y) = x*y$",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">v1 <span style=\"color: #666666\">=</span> [<span style=\"color: #666666\">1:20</span>;]\nv2 <span style=\"color: #666666\">=</span> [<span style=\"color: #666666\">11:30</span>;]\n</pre></div>\n</td></tr></tbody></table></center><br>",
+                        "map( (x,y)-&gt;x*y,&nbsp; v1, v2)"
+                    ],
+                    "guid": "Dfozk~X~&P",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Create $f(x,y)= x+\\alpha y$ inline with default value $\\alpha =1$",
+                        ".",
+                        "f(x,y, alpha=1) = x + alpha*y&nbsp;"
+                    ],
+                    "guid": "e,Q|5)l&Y)",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Filter values of arr such that $arr_i&gt;=0$",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">arr <span style=\"color: #666666\">=</span> [<span style=\"color: #666666\">-10:10</span>;]\n</pre></div>\n</td></tr></tbody></table></center>",
+                        "filter( x-&gt;(x&gt;=0), arr )"
+                    ],
+                    "guid": "jgMGr/]}S@",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Get the sum from 1 to 100 using reduce",
+                        ".",
+                        "reduce( (x,y)-&gt;x+y, [1:100;])"
+                    ],
+                    "guid": "Laj_y4TLf*",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Create array with even values from 1 to 100",
+                        ".",
+                        "[x for x in 1:100 if x%2==0]"
+                    ],
+                    "guid": "ES*jpyYjvM",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Create array of 1:100 if i is even write foo else bar",
+                        "",
+                        "[if i%2==0 \"foo\" else \"bar\" end for i in 1:100]"
+                    ],
+                    "guid": "Pu44QqI+YZ",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Assign z to value corresponding of the sum of first 100 numbers using Compound expressions",
+                        ".",
+                        "z = <br>begin<br>&nbsp; &nbsp; x = 0<br>&nbsp; &nbsp; i = 1<br>&nbsp; &nbsp; while i&lt;=100<br>&nbsp; &nbsp; &nbsp; &nbsp; x += i<br>&nbsp; &nbsp; &nbsp; &nbsp; i+=1<br>&nbsp; &nbsp; end<br>&nbsp; &nbsp; return x<br>end"
+                    ],
+                    "guid": "CAjY+XQMxc",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Print values from 1 to 5",
+                        ".",
+                        "for i in 1:5<br>&nbsp; &nbsp; println(i)<br>end"
+                    ],
+                    "guid": "f:{*z`67$M",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Print tuples (i,j) for values i = 1 to 10 and j 1 to 10",
+                        ".",
+                        "for i in 1:10, j in 1:10<br>&nbsp; &nbsp; println((i,j))<br>end"
+                    ],
+                    "guid": "B!S]Prf8xK",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Print paired values (i,j) from l1 and l2&nbsp;",
+                        "l1 = [1:10;]<br>l2 = [1:20;]",
+                        "for (i,j) in zip(l1,l2)<br>&nbsp; &nbsp; println((i,j))<br>end"
+                    ],
+                    "guid": "Cl.e#~Q-ps",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Write a function called \"get\\_sqrt\" that returns sqrt(x) which handles DomainError ( printing Incorrect domain) and ArgumentError ( printing Incorrect argument) and always print \"Always run\"",
+                        ".",
+                        "function get_sqrt(x)<br>&nbsp;&nbsp;&nbsp; try<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sqrt(x)<br>&nbsp;&nbsp;&nbsp; catch e<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if isa(e,DomainError)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; println(\"Incorrect domain\")<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; elseif isa(e,ArgumentError)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; println(\"Incorrect argument\")<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end<br>&nbsp;&nbsp;&nbsp; finally<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; println(\"Always runs\")<br>&nbsp; &nbsp; end<br>end"
+                    ],
+                    "guid": "H<,M9r.24k",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                }
+            ]
+        },
+        {
+            "__type__": "Deck",
+            "children": [],
+            "crowdanki_uuid": "ecb716b9-9c1a-11ec-af94-d17075e88979",
+            "deck_config_uuid": "e7b6a329-9c1a-11ec-af94-d17075e88979",
+            "desc": "",
+            "dyn": 0,
+            "extendNew": 0,
+            "extendRev": 0,
+            "media_files": [],
+            "name": "linux y programacion",
+            "notes": [
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Screen",
+                        "Screen",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3\n4\n5\n6\n7</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">screen -S &lt;name&gt; <span style=\"color: #408080; font-style: italic\">#create session</span>\nscreen -r &lt;name<span style=\"color: #666666\">||</span>id&gt; <span style=\"color: #408080; font-style: italic\">#restore session</span>\nscreen -ls <span style=\"color: #408080; font-style: italic\">#list sessions</span>\nscreen -X &lt;command&gt; <span style=\"color: #408080; font-style: italic\">#execute command in session</span>\nCtrl + A + ..\n\t-D <span style=\"color: #408080; font-style: italic\">#detach</span>\n\t-K <span style=\"color: #408080; font-style: italic\">#kill</span>\n</pre></div>\n</td></tr></tbody></table></center><br>"
+                    ],
+                    "guid": "K:1OjA!M8^",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "JSON",
+                        "JavaScript Object Notation<br>\\begin{itemize}<br>\\item Arrays<br>\\item Objects (dictionaries)<br>\\item Strings<br>\\item Null<br>\\item Numbers<br>\\item Boolean<br>\\end{itemize}",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\"> 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">[\n\t{\n\t\t<span style=\"color: #008000; font-weight: bold\">\"name\"</span>: <span style=\"color: #BA2121\">\"Osvaldo\"</span>,\n\t\t<span style=\"color: #008000; font-weight: bold\">\"edad\"</span>: <span style=\"color: #666666\">21</span>,\n\t\t<span style=\"color: #008000; font-weight: bold\">\"casado\"</span>: <span style=\"color: #008000; font-weight: bold\">false</span>,\n\t\t<span style=\"color: #008000; font-weight: bold\">\"novia\"</span>: <span style=\"color: #008000; font-weight: bold\">null</span>\n\t},\n\t{\n\t\t<span style=\"color: #008000; font-weight: bold\">\"name\"</span>: <span style=\"color: #BA2121\">\"Carlos\"</span>,\n\t\t<span style=\"color: #008000; font-weight: bold\">\"edad\"</span>: <span style=\"color: #666666\">22</span>,\n\t\t<span style=\"color: #008000; font-weight: bold\">\"casado\"</span>: <span style=\"color: #008000; font-weight: bold\">false</span>,\n\t\t<span style=\"color: #008000; font-weight: bold\">\"novia\"</span> : <span style=\"color: #008000; font-weight: bold\">null</span>\n\t}\n]\n</pre></div>\n</td></tr></tbody></table></center><br>"
+                    ],
+                    "guid": "FYMcI]K6D]",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "LVM",
+                        "Logical Volume Manager<br><br>Existen 3 conceptos clave:<br>\\begin{itemize}<br>\\item LV: logical volume<br>\\item PV: phisycal volume<br>\\item VG: volume group (group of PV)<br>\\end{itemize}<br><br>LV $\\equiv$Partition<br><br>VG$\\equiv$ Disk",
+                        ""
+                    ],
+                    "guid": "Be0h}@`(^*",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Physical volumes on LVM",
+                        "Abstracción de particiones",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3\n4\n5</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">pvscan\npvs\npvdisplay\npvcreate\npvremove\n</pre></div>\n</td></tr></tbody></table></center><br>"
+                    ],
+                    "guid": "HV{V=<O?=l",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Volume group on LVM",
+                        "Collection of physical groups",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3\n4\n5\n6\n7</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">vgs\nvgscan\nvgdisplay\nvgcreate &lt;name&gt; &lt;pv<span style=\"color: #666666\">||</span>list&gt; <span style=\"color: #408080; font-style: italic\"># create vg with list of pv</span>\nvgextend &lt;vg&gt; &lt;pv<span style=\"color: #666666\">||</span>list&gt; <span style=\"color: #408080; font-style: italic\"># add pv to vg</span>\nvgreduce &lt;vg&gt; &lt;pv<span style=\"color: #666666\">||</span>list&gt; <span style=\"color: #408080; font-style: italic\"># remove pv from vg</span>\nvgremove &lt;vg&gt;\n</pre></div>\n</td></tr></tbody></table></center><br>"
+                    ],
+                    "guid": "Nd+7X7>I>K",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Logical volumes on LVM",
+                        "Equivalent to partitions",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3\n4\n5\n6\n7\n8</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">lvs\nlvscan\nlvdisplay\nlvextend\nlvreduce\nlvresize\nlvremove\nlvcreate\n</pre></div>\n</td></tr></tbody></table></center><br>"
+                    ],
+                    "guid": "kIbHf{|,6g",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                }
+            ]
+        },
+        {
+            "__type__": "Deck",
+            "children": [],
+            "crowdanki_uuid": "e906188a-9c1a-11ec-af94-d17075e88979",
+            "deck_config_uuid": "e7b6a329-9c1a-11ec-af94-d17075e88979",
+            "desc": "",
+            "dyn": 0,
+            "extendNew": 0,
+            "extendRev": 0,
+            "media_files": [
+                "bf5ffe866acb4d86973a19e54c55060d-ao-1-A.svg",
+                "bf5ffe866acb4d86973a19e54c55060d-ao-1-Q.svg",
+                "bf5ffe866acb4d86973a19e54c55060d-ao-2-A.svg",
+                "bf5ffe866acb4d86973a19e54c55060d-ao-2-Q.svg",
+                "bf5ffe866acb4d86973a19e54c55060d-ao-3-A.svg",
+                "bf5ffe866acb4d86973a19e54c55060d-ao-3-Q.svg",
+                "bf5ffe866acb4d86973a19e54c55060d-ao-4-A.svg",
+                "bf5ffe866acb4d86973a19e54c55060d-ao-4-Q.svg",
+                "bf5ffe866acb4d86973a19e54c55060d-ao-O.svg",
+                "tmpaql36d2k.png"
+            ],
+            "name": "matemáticas generales",
+            "notes": [
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Relación",
+                        "Dado dos conjuntos $A,B$, decimos que una relación de $A \\mapsto B$ a un subconjunto $R \\subseteq A\\times B$.",
+                        ""
+                    ],
+                    "guid": "mr;_:4l4R/",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Función",
+                        "Dado dos conjuntos $A, B$ una función es una relación $R$ donde<br>\\begin{itemize}<br>\\item $\\forall x\\in A \\exists y: (x, y) \\in R$<br>\\item $(x, z) \\in R, (x, y)\\in R&nbsp; \\Leftarrow x=z$<br>\\end{itemize}",
+                        ""
+                    ],
+                    "guid": "D1*wmpFcqQ",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Strong, weak and transfinite induction principles",
+                        "\\begin{itemize}<br>\\item Weak:<br>\\begin{itemize}<br>\\item $P_1$ is true<br>\\item $P_k \\rightarrow P_{k+1} $<br><br>$\\Rightarrow P_i \\text{ is true } \\forall i\\in \\mathbb{N}$<br>\\end{itemize}<br><br>\\item Strong: <br>\\begin{itemize}<br>\\item $D= \\{ n | P_n \\text{ is true }\\} $<br>\\item $0\\in D$<br>\\item $\\{0,...,n \\} \\subset D \\rightarrow n+1 \\in D $<br><br>$\\Rightarrow D=\\mathbb{Z}$<br>\\end{itemize}<br><br>\\item Transfinite:<br>\\begin{itemize}<br>\\item $A$ is a well ordered set <br>\\item $P(\\cdot )$ proposition of $A$<br>\\item $P(x_0)$ where $x_0&lt;x \\quad \\forall x \\in A$<br>\\item $P(x) \\text{ is true } \\forall x&lt;a \\rightarrow P(a)$<br><br>$\\Rightarrow P(x) \\quad&nbsp; \\forall x \\in A$<br>\\end{itemize}<br>\\end{itemize}",
+                        ""
+                    ],
+                    "guid": "cQ,l<ES=[m",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Relación reflexiva",
+                        "Sea $R$ una relación binaria en el conjunto $A$<br><br>$R$ es una relación reflexiva si&nbsp; $\\forall x \\in A, \\quad xRx$",
+                        ""
+                    ],
+                    "guid": "fJ_6Ut,*DU",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Relación simétrica",
+                        "Sea $R$ una relación binaria en el conjunto $A$<br><br>$R$ es una relación simétrica si $\\forall x,y \\in A$, $xRy \\Leftrightarrow yRx$",
+                        ""
+                    ],
+                    "guid": "l])H6(P6p?",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Relación transitiva",
+                        "Sea $R$ una relación binaria en el conjunto $A$<br><br>$R$ es una relación transitiva si&nbsp; $\\forall x,y,z \\in A$, $xRy, \\quad yRz \\Rightarrow xRz$",
+                        ""
+                    ],
+                    "guid": "bW,4+R7a#p",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Relación de equivalencia",
+                        "Sea $R$ una relación binaria en el conjunto $A$<br><br>$R$ es una relación de equivalencia $(\\equiv )$ si $A\\neq \\emptyset$ y $R$ es reflexiva, simétrica y transitiva",
+                        ""
+                    ],
+                    "guid": "N{^k/l6]8G",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Vector",
+                        "Objeto matemático con magnitud y dirección",
+                        ""
+                    ],
+                    "guid": "LZ1Yfr3KP?",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "bf5ffe866acb4d86973a19e54c55060d-ao-1",
+                        "",
+                        "<img src=\"tmpaql36d2k.png\" />",
+                        "<img src=\"bf5ffe866acb4d86973a19e54c55060d-ao-1-Q.svg\" />",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "<img src=\"bf5ffe866acb4d86973a19e54c55060d-ao-1-A.svg\" />",
+                        "<img src=\"bf5ffe866acb4d86973a19e54c55060d-ao-O.svg\" />"
+                    ],
+                    "guid": "xWycP$(d~b",
+                    "note_model_uuid": "e90618a6-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "bf5ffe866acb4d86973a19e54c55060d-ao-2",
+                        "",
+                        "<img src=\"tmpaql36d2k.png\" />",
+                        "<img src=\"bf5ffe866acb4d86973a19e54c55060d-ao-2-Q.svg\" />",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "<img src=\"bf5ffe866acb4d86973a19e54c55060d-ao-2-A.svg\" />",
+                        "<img src=\"bf5ffe866acb4d86973a19e54c55060d-ao-O.svg\" />"
+                    ],
+                    "guid": "j`jlNhgk^k",
+                    "note_model_uuid": "e90618a6-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "bf5ffe866acb4d86973a19e54c55060d-ao-3",
+                        "",
+                        "<img src=\"tmpaql36d2k.png\" />",
+                        "<img src=\"bf5ffe866acb4d86973a19e54c55060d-ao-3-Q.svg\" />",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "<img src=\"bf5ffe866acb4d86973a19e54c55060d-ao-3-A.svg\" />",
+                        "<img src=\"bf5ffe866acb4d86973a19e54c55060d-ao-O.svg\" />"
+                    ],
+                    "guid": "F;UeIu.Id!",
+                    "note_model_uuid": "e90618a6-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "bf5ffe866acb4d86973a19e54c55060d-ao-4",
+                        "",
+                        "<img src=\"tmpaql36d2k.png\" />",
+                        "<img src=\"bf5ffe866acb4d86973a19e54c55060d-ao-4-Q.svg\" />",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "<img src=\"bf5ffe866acb4d86973a19e54c55060d-ao-4-A.svg\" />",
+                        "<img src=\"bf5ffe866acb4d86973a19e54c55060d-ao-O.svg\" />"
+                    ],
+                    "guid": "c-3mI:#d#D",
+                    "note_model_uuid": "e90618a6-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                }
+            ]
+        },
+        {
+            "__type__": "Deck",
+            "children": [],
+            "crowdanki_uuid": "ef42a498-9c1a-11ec-af94-d17075e88979",
+            "deck_config_uuid": "e7b6a329-9c1a-11ec-af94-d17075e88979",
+            "desc": "",
+            "dyn": 0,
+            "extendNew": 0,
+            "extendRev": 0,
+            "media_files": [],
+            "name": "mineria de datos",
+            "notes": [
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Estadística",
+                        "Rama de las matemáticas \\textbf{encargada} de \\textbf{recopilar, estructura, analizar y presentar variables aleatorias} ó fenómenos aleatorios a fin de realizar \\textbf{explicaciones, predicciones o inferencias} basadas en la teoría de la \\textbf{probabilidad}",
+                        ""
+                    ],
+                    "guid": "cU6DLNcaSF",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Business Intelligence",
+                        "Rama de la \\textbf{ciencias de la computación} encargada de \\textbf{transformar datos en información} por medio de \\textbf{visualizaciones}.",
+                        ""
+                    ],
+                    "guid": "Ls,YMJ&W(P",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Internet of Things",
+                        "Se le llama internet de las cosas a la \\textbf{red} interconectada de \\textbf{dispositivos} con \\textbf{sensores} que \\textbf{comparten datos entre sí}.<br><br>Puede ser desde un \\textit{\\textbf{wearable}} hasta \\textbf{máquinas industriales}",
+                        ""
+                    ],
+                    "guid": "kR82WP.WX}",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Datos, información y conocimiento",
+                        "Los datos son la unidad mínima de conocimiento, carecen de sentido, contexto y relevancia.<br><br>La información son datos con contexto, relevancia y que aportan un valor.<br><br>El conocimiento es la comprensión profunda de dicha información.",
+                        ""
+                    ],
+                    "guid": "o):M^x-vWm",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Ciencia de datos",
+                        "Campo \\textbf{multidisplinario} que conjunta, las disciplinas de <br>\\begin{itemize}<br>\\item Analytics<br>\\item Minería de datos<br>\\item Ciencias de la computación<br>\\item Modelacióń matemática<br>\\item Business intelligence<br>\\end{itemize}",
+                        ""
+                    ],
+                    "guid": "Q5y:S1W^<C",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "BIG DATA",
+                        "Se le llama BigData al \\textbf{conjunto de datos}&nbsp; que no se puede analizar por \\textbf{métodos tradicionales} y que cumple con las 5 v's<br>\\begin{itemize}<br>\\item Volumen<br>\\item Variedad<br>\\item Velocidad<br>\\item Veracidad<br>\\item Valor<br>\\end{itemize}<br>En la actualidad hablamos de BigData cuando esto incluye \\textbf{Terabytes}.&nbsp; Actualmente muy enlazado con \\textbf{IoT}.",
+                        ""
+                    ],
+                    "guid": "rc+O,TbM<f",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Minería de datos<br><br>(Knowledge Discovery in Databases)",
+                        "Disciplina nacida a \\textbf{finales de los 90's-principios de los 2000} que se encarga de encontrar \\textbf{correlaciones, información no trivial, patrones, anomalías} en \\textbf{grandes conjuntos de datos}&nbsp; con el fin de realizar \\textbf{predicciones} y generar \\textbf{valor}",
+                        ""
+                    ],
+                    "guid": "FAKdENOSwl",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Inteligencia Artificial<br><br>(IA)",
+                        "Rama de las \\textbf{ciencias de la computación} encargada de imitar \\textbf{procesos o comportamientos cognitivos}",
+                        ""
+                    ],
+                    "guid": "ek`1H=cp`>",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Analytics",
+                        "\\textbf{Minería de datos + Comunicación e Interpretación}<br><br>Disciplina que se encarga de extraer información de los datos, comunicarla e interpretarla. Se apoya de Business Intelligence-",
+                        ""
+                    ],
+                    "guid": "cQI!y*{|oJ",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Niveles de información",
+                        "\\begin{itemize}<div>\\item estratégica (gerencial)</div><div>\\item tactical (planeación)</div><div>\\item operacional (tuplas de una base de datos)<br><div>\\end{itemize}</div></div>",
+                        ""
+                    ],
+                    "guid": "kv{<Mr<K$9",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Integridad de datos",
+                        "Se refiere a la<div>\\begin{itemize}</div><div>\\item Precisión</div><div>\\item Completitud</div><div>\\item Coherencia</div><div>\\item Fiabilidad</div><div>\\end{itemize}</div><div>Evita que los datos sean:</div><div>\\begin{itemize}</div><div>\\item Duplicados</div><div>\\item Faltantes</div><div>\\item Alterados</div><div>\\item Incorrectos<br></div><div>\\end{itemize}</div>",
+                        ""
+                    ],
+                    "guid": "uES&U$vIyH",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Niveles de integridad",
+                        "\\begin{itemize}<div>\\item Físico</div><div>\\item Lógico</div><div>\\item Entidad: llave primaria única</div><div>\\item Referencial: llaves foráneas&nbsp;</div><div>\\item Dominio: formato, rango de valores, tipos</div><div>\\item Usuario: reglas del negocio</div><div><div>\\end{itemize}</div></div>",
+                        ""
+                    ],
+                    "guid": "W@%YMD8YE",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Normalización",
+                        "Proceso para eliminar redundancia, incoherencias y mejorar la integridad en una base de datos",
+                        ""
+                    ],
+                    "guid": "pnuB$dRW{d",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Primera Forma Normal",
+                        "\\begin{itemize}<div>\\item No múltiples campos en una sola columna</div><div><div>\\end{itemize}</div></div>",
+                        ""
+                    ],
+                    "guid": "C_&3=;lDVP",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Segunda Forma Normal",
+                        "\\begin{itemize}<div>\\item Primera Forma Normal</div><div>\\item No relaciones parciales</div><div><div>\\end{itemize}</div></div>",
+                        ""
+                    ],
+                    "guid": "ASGO/6$YdR",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Tercera Forma Normal",
+                        "\\begin{itemize}<div>\\item Segunda Forma Normal</div><div>\\item No dependencias transitivas (Dividir en más tablas)<br><div>\\end{itemize}</div></div>",
+                        ""
+                    ],
+                    "guid": "m&I;S;Z+4C",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Transacción",
+                        "\\textbf{Unidad atómica} de trabajo que combina múltiples sentencias \\textbf{SQL}",
+                        ""
+                    ],
+                    "guid": "u:9[6z-Qkk",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Consistencia de datos",
+                        "Asegura que un mismo dato (para todos los datos) sea el mismo en cualquier lugar donde se almacene (humano, base de datos A, base de datos B).",
+                        ""
+                    ],
+                    "guid": "b%oEZ#7Ou5",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Propiedades fundamentales de una transacción",
+                        "ACID:<div>\\begin{itemize}</div><div>\\item Atomicity : Se deben realizar todas las tareas o ninguna (commit, rollback)</div><div>\\item Consistency: Mismo datos en todas partes</div><div>\\item Isolation: Una transacción no debe afectar a ninguna otra</div><div>\\item Durability: Una vez hecho, permanecer</div><div>\\end{itemize}</div>",
+                        ""
+                    ],
+                    "guid": "C:J_I.4=rm",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Data Warehouse",
+                        "Es un \\textbf{sistema centralizado y único} que se encarga de \\textbf{agregar y combinar} diferentes \\textbf{fuentes de datos} y \\textbf{almacenarlos} para su posterior análisis.",
+                        ""
+                    ],
+                    "guid": "BZ_=gN:;Ha",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Paradigmas de DW",
+                        "1.- Mainframe + ETL + RDBMS + Análisis<br><br><div>2.- Cloud + BI + Algoritmos + AI + ML + Análisis</div>",
+                        ""
+                    ],
+                    "guid": "tSz#{Ybq,4",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                }
+            ]
+        },
+        {
+            "__type__": "Deck",
+            "children": [],
+            "crowdanki_uuid": "ecb71646-9c1a-11ec-af94-d17075e88979",
+            "deck_config_uuid": "e7b6a329-9c1a-11ec-af94-d17075e88979",
+            "desc": "",
+            "dyn": 0,
+            "extendNew": 0,
+            "extendRev": 0,
+            "media_files": [],
+            "name": "pandas",
+            "notes": [
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Types of objects in pandas",
+                        "DataFrame, Series",
+                        ""
+                    ],
+                    "guid": "A33@zIBFlk",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Transpose a DataFrame",
+                        ".",
+                        "df.T"
+                    ],
+                    "guid": "n4j%&t7`El",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Set index to lowercase ascii alphabet",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000; font-weight: bold\">import</span> <span style=\"color: #0000FF; font-weight: bold\">numpy</span> <span style=\"color: #008000; font-weight: bold\">as</span> <span style=\"color: #0000FF; font-weight: bold\">np</span>\ndf <span style=\"color: #666666\">=</span> pd<span style=\"color: #666666\">.</span>DataFrame({<span style=\"color: #BA2121\">\"x\"</span>:np<span style=\"color: #666666\">.</span>arange(<span style=\"color: #666666\">0</span>,<span style=\"color: #666666\">26</span>), <span style=\"color: #BA2121\">\"y\"</span>: <span style=\"color: #BA2121\">\"one\"</span>})\n</pre></div>\n</td></tr></tbody></table></center><br>",
+                        "from string import ascii_lowercase<br>df.set_index([ascii_lowercase])"
+                    ],
+                    "guid": "xqiXH/F*YF",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Set index to columns \"name\" and \"last name\"",
+                        ".",
+                        "df.set_index([\"name\", \"last name\"])"
+                    ],
+                    "guid": "BBgo0^,<9i",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Set index to ascii lowercase and ascii uppercase",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000; font-weight: bold\">import</span> <span style=\"color: #0000FF; font-weight: bold\">numpy</span> <span style=\"color: #008000; font-weight: bold\">as</span> <span style=\"color: #0000FF; font-weight: bold\">np</span>\ndf <span style=\"color: #666666\">=</span> pd<span style=\"color: #666666\">.</span>DataFrame(np<span style=\"color: #666666\">.</span>random<span style=\"color: #666666\">.</span>randint(low<span style=\"color: #666666\">=0</span>,high<span style=\"color: #666666\">=20</span>,size<span style=\"color: #666666\">=</span>(<span style=\"color: #666666\">20</span>,<span style=\"color: #666666\">4</span>)))\n</pre></div>\n</td></tr></tbody></table></center><br>",
+                        "from string import ascii_lowercase, ascii_uppercase<br>df.set_index([ascii_lowercase, ascii_uppercase])"
+                    ],
+                    "guid": "LT(l{ONH(u",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Set index to 'name' column",
+                        ".",
+                        "df.set_index(\"name\")"
+                    ],
+                    "guid": "b*1@h4S+,;",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Select all tuples from df where 'salary' is greater equal to 9000",
+                        ".",
+                        "df[df[\"salary\"]&gt;=9000]"
+                    ],
+                    "guid": "NRM}0c.=P#",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Select all tuples from df where 'name' is not null",
+                        ".",
+                        "df[df[\"name\"].notnull()]"
+                    ],
+                    "guid": "kX>5&6G}|P",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Select all tuples from df where \"country\" is Mexico",
+                        ".",
+                        "df[df[\"country\"]==\"Mexico\"]"
+                    ],
+                    "guid": "d&sB~fS&Qw",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Select (columns, rows) usign label paradigm<br>\\begin{itemize}<br>\\item all, Row\\_1<br>\\item Age, Row\\_3 to Row\\_5<br>\\item Weight and Age, Row\\_1 and Row\\_4<br>\\item Age, Row\\_3<br>\\end{itemize}",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\"> 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000; font-weight: bold\">import</span> <span style=\"color: #0000FF; font-weight: bold\">pandas</span> <span style=\"color: #008000; font-weight: bold\">as</span> <span style=\"color: #0000FF; font-weight: bold\">pd</span>\ndf <span style=\"color: #666666\">=</span> pd<span style=\"color: #666666\">.</span>DataFrame(\n    {  \n        <span style=\"color: #BA2121\">'Weight'</span>:[<span style=\"color: #666666\">45</span>, <span style=\"color: #666666\">88</span>, <span style=\"color: #666666\">56</span>, <span style=\"color: #666666\">15</span>, <span style=\"color: #666666\">71</span>],\n        <span style=\"color: #BA2121\">'Name'</span>:[<span style=\"color: #BA2121\">'Sam'</span>, <span style=\"color: #BA2121\">'Andrea'</span>, <span style=\"color: #BA2121\">'Alex'</span>, <span style=\"color: #BA2121\">'Robin'</span>, <span style=\"color: #BA2121\">'Kia'</span>],\n        <span style=\"color: #BA2121\">'Age'</span>:[<span style=\"color: #666666\">14</span>, <span style=\"color: #666666\">25</span>, <span style=\"color: #666666\">55</span>, <span style=\"color: #666666\">8</span>, <span style=\"color: #666666\">21</span>]\n        <span style=\"color: #BA2121\">'Surname'</span>:[<span style=\"color: #BA2121\">\"Sammy\"</span>, <span style=\"color: #BA2121\">\"Andy\"</span>, <span style=\"color: #BA2121\">\"Ale\"</span>, <span style=\"color: #BA2121\">\"Rod\"</span>, <span style=\"color: #BA2121\">\"Camioneta\"</span>]\n    },\n    index_ <span style=\"color: #666666\">=</span> [<span style=\"color: #BA2121\">'Row_1'</span>, <span style=\"color: #BA2121\">'Row_2'</span>, <span style=\"color: #BA2121\">'Row_3'</span>, <span style=\"color: #BA2121\">'Row_4'</span>, <span style=\"color: #BA2121\">'Row_5'</span>]\n)\n</pre></div>\n</td></tr></tbody></table></center><br>",
+                        "df.loc[\"Row_1\",:]<br>df.loc[\"Row_3\":\"Row_5\", \"Age\"]<br>df.loc[[\"Row_1\",\"Row_4\"],[\"Weight\",\"Age\"]]<br>df.loc[\"Row_3\",\"Age\"]"
+                    ],
+                    "guid": "C^[=QW>>}A",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Select (columns, rows) usign index paradigm<br>\\begin{itemize}<br>\\item all, Row\\_1<br>\\item Age, Row\\_3 to Row\\_5<br>\\item Weight and Age, Row\\_1 and Row\\_4<br>\\item Surname, Row\\_3<br>\\end{itemize}",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\"> 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000; font-weight: bold\">import</span> <span style=\"color: #0000FF; font-weight: bold\">pandas</span> <span style=\"color: #008000; font-weight: bold\">as</span> <span style=\"color: #0000FF; font-weight: bold\">pd</span>\ndf <span style=\"color: #666666\">=</span> pd<span style=\"color: #666666\">.</span>DataFrame(\n    {  \n        <span style=\"color: #BA2121\">'Weight'</span>:[<span style=\"color: #666666\">45</span>, <span style=\"color: #666666\">88</span>, <span style=\"color: #666666\">56</span>, <span style=\"color: #666666\">15</span>, <span style=\"color: #666666\">71</span>],\n        <span style=\"color: #BA2121\">'Name'</span>:[<span style=\"color: #BA2121\">'Sam'</span>, <span style=\"color: #BA2121\">'Andrea'</span>, <span style=\"color: #BA2121\">'Alex'</span>, <span style=\"color: #BA2121\">'Robin'</span>, <span style=\"color: #BA2121\">'Kia'</span>],\n        <span style=\"color: #BA2121\">'Age'</span>:[<span style=\"color: #666666\">14</span>, <span style=\"color: #666666\">25</span>, <span style=\"color: #666666\">55</span>, <span style=\"color: #666666\">8</span>, <span style=\"color: #666666\">21</span>]\n        <span style=\"color: #BA2121\">'Surname'</span>:[<span style=\"color: #BA2121\">\"Sammy\"</span>, <span style=\"color: #BA2121\">\"Andy\"</span>, <span style=\"color: #BA2121\">\"Ale\"</span>, <span style=\"color: #BA2121\">\"Rod\"</span>, <span style=\"color: #BA2121\">\"Camioneta\"</span>]\n    },\n    index_ <span style=\"color: #666666\">=</span> [<span style=\"color: #BA2121\">'Row_1'</span>, <span style=\"color: #BA2121\">'Row_2'</span>, <span style=\"color: #BA2121\">'Row_3'</span>, <span style=\"color: #BA2121\">'Row_4'</span>, <span style=\"color: #BA2121\">'Row_5'</span>]\n)\n</pre></div>\n</td></tr></tbody></table></center><br>",
+                        "df.iloc[0,:]<br>df.iloc[2:5,2]<br>df.iloc[[0,3],[0,2]]<br>df.iloc[2,3]"
+                    ],
+                    "guid": "ynj9@SaKSK",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Select \"alcohol\" and \"pH\" variables from wine DataFrame",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000; font-weight: bold\">import</span> <span style=\"color: #0000FF; font-weight: bold\">pandas</span> <span style=\"color: #008000; font-weight: bold\">as</span> <span style=\"color: #0000FF; font-weight: bold\">pd</span>\ndf <span style=\"color: #666666\">=</span> pd<span style=\"color: #666666\">.</span>read_csv(<span style=\"color: #BA2121\">\"wine.csv\"</span>)\n</pre></div>\n</td></tr></tbody></table></center><br>",
+                        "df[[\"alcohol\", \"pH\"]]"
+                    ],
+                    "guid": "Fz&]QqX%iu",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Save DataFrame to csv and then excel both called \"file\"",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000; font-weight: bold\">import</span> <span style=\"color: #0000FF; font-weight: bold\">pandas</span> <span style=\"color: #008000; font-weight: bold\">as</span> <span style=\"color: #0000FF; font-weight: bold\">pd</span>\ndf <span style=\"color: #666666\">=</span> pd<span style=\"color: #666666\">.</span>read_csv(<span style=\"color: #BA2121\">\"filename.csv\"</span>)\n</pre></div>\n</td></tr></tbody></table></center><br>",
+                        "df.to_csv(\"file.csv\")<br>df.to_excel(\"file.xlsx\")"
+                    ],
+                    "guid": "DZPfO7/O0s",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Read the sheet \"catalog\" from an excel file called \"covid.xlsx\" and save it to \"df\"",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000; font-weight: bold\">import</span> <span style=\"color: #0000FF; font-weight: bold\">pandas</span> <span style=\"color: #008000; font-weight: bold\">as</span> <span style=\"color: #0000FF; font-weight: bold\">pd</span>\n</pre></div>\n</td></tr></tbody></table></center><br>",
+                        "df = pd.read_excel(\"covid.xlsx\", sheet_name=\"catalog\")"
+                    ],
+                    "guid": "K.A415iBLt",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Read the csv file called \"houses\\_prices.csv\" and save it to \"df\"",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000; font-weight: bold\">import</span> <span style=\"color: #0000FF; font-weight: bold\">pandas</span> <span style=\"color: #008000; font-weight: bold\">as</span> <span style=\"color: #0000FF; font-weight: bold\">pd</span>\n</pre></div>\n</td></tr></tbody></table></center><br>",
+                        "df = pd.read_csv(\"houses_prices.csv\")"
+                    ],
+                    "guid": "sQ4+vidPk8",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Plot histograms of size (20,20), only continuos",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000; font-weight: bold\">import</span> <span style=\"color: #0000FF; font-weight: bold\">pandas</span> <span style=\"color: #008000; font-weight: bold\">as</span> <span style=\"color: #0000FF; font-weight: bold\">pd</span>\ndf <span style=\"color: #666666\">=</span> pd<span style=\"color: #666666\">.</span>read_csv(<span style=\"color: #BA2121\">\"filename.csv\"</span>)\nvarc <span style=\"color: #666666\">=</span> [<span style=\"color: #BA2121\">\"sales\"</span>, <span style=\"color: #BA2121\">\"pib\"</span>, <span style=\"color: #BA2121\">\"iva\"</span>]\n</pre></div>\n</td></tr></tbody></table></center><br>",
+                        "df[varc].hist(figsize=(20,20))"
+                    ],
+                    "guid": "tB-z:c4B-",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Last 5 tuples in df",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000; font-weight: bold\">import</span> <span style=\"color: #0000FF; font-weight: bold\">pandas</span> <span style=\"color: #008000; font-weight: bold\">as</span> <span style=\"color: #0000FF; font-weight: bold\">pd</span>\ndf <span style=\"color: #666666\">=</span> pd<span style=\"color: #666666\">.</span>read_csv(<span style=\"color: #BA2121\">\"filename.csv\"</span>)\n</pre></div>\n</td></tr></tbody></table></center><br>",
+                        "df.tail(5)"
+                    ],
+                    "guid": "pc-^yj&nb(",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "How does apply work for DataFrames? (4 arguments)&nbsp;",
+                        "\\begin{itemize}<br>\\item func: a function applied to each element on the object<br>\\item axis:<br>\\begin{itemize}<br>\\item if 0 then each element passed to func will be a column as a Serie<br>\\item if 1 the each element passed to func will be a row as a Serie<br>\\end{itemize}<br>\\item raw: if True then elements passed can be converted to numpy arrays<br>\\item args: if func needs more than one parameter can be passed in order to args<br>\\end{itemize}",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3\n4\n5\n6\n7\n8\n9</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000; font-weight: bold\">import</span> <span style=\"color: #0000FF; font-weight: bold\">pandas</span> <span style=\"color: #008000; font-weight: bold\">as</span> <span style=\"color: #0000FF; font-weight: bold\">pd</span>\n<span style=\"color: #008000; font-weight: bold\">import</span> <span style=\"color: #0000FF; font-weight: bold\">numpy</span> <span style=\"color: #008000; font-weight: bold\">as</span> <span style=\"color: #0000FF; font-weight: bold\">np</span>\ndf <span style=\"color: #666666\">=</span> pd<span style=\"color: #666666\">.</span>DataFrame(\n    {\n        <span style=\"color: #BA2121\">\"x\"</span>:np<span style=\"color: #666666\">.</span>linspace(start<span style=\"color: #666666\">=0</span>,stop<span style=\"color: #666666\">=1</span>,num<span style=\"color: #666666\">=20</span>),\n        <span style=\"color: #BA2121\">\"y\"</span>:np<span style=\"color: #666666\">.</span>linspace(start<span style=\"color: #666666\">=0</span>,stop<span style=\"color: #666666\">=1</span>,num<span style=\"color: #666666\">=20</span>)\n    }\n)\ndf<span style=\"color: #666666\">.</span>apply(func, axis<span style=\"color: #666666\">=0</span>, raw<span style=\"color: #666666\">=</span><span style=\"color: #008000\">False</span>, args<span style=\"color: #666666\">=</span>())\n</pre></div>\n</td></tr></tbody></table></center><br>"
+                    ],
+                    "guid": "gN(VU+>HMz",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Get unique values in df first column",
+                        ".",
+                        "df[0].unique()"
+                    ],
+                    "guid": "M%]wh($hrS",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Get the counts of all unique values in df's first column and all unique tuples in the DataFrame",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">df <span style=\"color: #666666\">=</span> pd<span style=\"color: #666666\">.</span>DataFrame(np<span style=\"color: #666666\">.</span>random<span style=\"color: #666666\">.</span>randint(low<span style=\"color: #666666\">=1</span>, high<span style=\"color: #666666\">=3</span>, size<span style=\"color: #666666\">=</span>(<span style=\"color: #666666\">20</span>,<span style=\"color: #666666\">4</span>)))\n</pre></div>\n</td></tr></tbody></table></center><br>",
+                        "df[0].value_counts()<br>df.value_counts()"
+                    ],
+                    "guid": "gKE0[pri{<",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Get standarized distributions of x, y",
+                        "<div class=\"highlight\" style=\"background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;\"><pre style=\"line-height: 25px;\"><span style=\"color: rgb(0, 128, 0); font-weight: bold;\">import</span> <span style=\"color: rgb(0, 0, 255); font-weight: bold;\">pandas</span> <span style=\"color: rgb(0, 128, 0); font-weight: bold;\">as</span> <span style=\"color: rgb(0, 0, 255); font-weight: bold;\">pd</span>\n<span style=\"color: rgb(0, 128, 0); font-weight: bold;\">from</span> <span style=\"color: rgb(0, 0, 255); font-weight: bold;\">scipy</span> <span style=\"color: rgb(0, 128, 0); font-weight: bold;\">import</span> stats\ndf <span style=\"color: rgb(102, 102, 102);\">=</span> pd<span style=\"color: rgb(102, 102, 102);\">.</span>DataFrame(\n\t{\n\t\t<span style=\"color: rgb(186, 33, 33);\">\"x\"</span>:stats<span style=\"color: rgb(102, 102, 102);\">.</span>norm<span style=\"color: rgb(102, 102, 102);\">.</span>rvs(loc<span style=\"color: rgb(102, 102, 102);\">=100</span>,scale<span style=\"color: rgb(102, 102, 102);\">=5</span>,size<span style=\"color: rgb(102, 102, 102);\">=100</span>),\n\t\t<span style=\"color: rgb(186, 33, 33);\">\"y\"</span>:stats<span style=\"color: rgb(102, 102, 102);\">.</span>norm<span style=\"color: rgb(102, 102, 102);\">.</span>rvs(loc<span style=\"color: rgb(102, 102, 102);\">=20</span>,scale<span style=\"color: rgb(102, 102, 102);\">=3</span>,size<span style=\"color: rgb(102, 102, 102);\">=100</span>)\n\t})\n</pre><div><br></div></div>",
+                        "df.apply(lambda x: (x-x.mean())/x.std(), raw=True, axis=0)"
+                    ],
+                    "guid": "lt[aG{S~s:",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Get pandas version",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000; font-weight: bold\">import</span> <span style=\"color: #0000FF; font-weight: bold\">pandas</span> <span style=\"color: #008000; font-weight: bold\">as</span> <span style=\"color: #0000FF; font-weight: bold\">pd</span>\n</pre></div>\n</td></tr></tbody></table></center><br>",
+                        "pd.__version__"
+                    ],
+                    "guid": "Ht{[/F#V/B",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Get df columns name",
+                        ".",
+                        "df.columns"
+                    ],
+                    "guid": "DLDlxLsY*D",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Get DataFrame shape",
+                        ".",
+                        "df.shape"
+                    ],
+                    "guid": "vv@F=>LG?A",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Get all percentiles 10,20,...,90 of all variables (suppose continuos)",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000; font-weight: bold\">import</span> <span style=\"color: #0000FF; font-weight: bold\">pandas</span> <span style=\"color: #008000; font-weight: bold\">as</span> <span style=\"color: #0000FF; font-weight: bold\">pd</span>\n<span style=\"color: #008000; font-weight: bold\">import</span> <span style=\"color: #0000FF; font-weight: bold\">numpy</span> <span style=\"color: #008000; font-weight: bold\">as</span> <span style=\"color: #0000FF; font-weight: bold\">np</span>\ndf <span style=\"color: #666666\">=</span> pd<span style=\"color: #666666\">.</span>read_csv(<span style=\"color: #BA2121\">\"filename.csv\"</span>)\n</pre></div>\n</td></tr></tbody></table></center><br>",
+                        "df.describe(percentiles=np.arange(0.1,1,0.1))"
+                    ],
+                    "guid": "hp,?5WH8C*",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Get a Series object with $x^2$",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3\n4\n5\n6\n7</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000; font-weight: bold\">import</span> <span style=\"color: #0000FF; font-weight: bold\">pandas</span> <span style=\"color: #008000; font-weight: bold\">as</span> <span style=\"color: #0000FF; font-weight: bold\">pd</span>\n<span style=\"color: #008000; font-weight: bold\">import</span> <span style=\"color: #0000FF; font-weight: bold\">numpy</span> <span style=\"color: #008000; font-weight: bold\">as</span> <span style=\"color: #0000FF; font-weight: bold\">np</span>\ndf <span style=\"color: #666666\">=</span> pd<span style=\"color: #666666\">.</span>DataFrame(\n\t{\n\t\t<span style=\"color: #BA2121\">\"x\"</span>:np<span style=\"color: #666666\">.</span>linspace(start<span style=\"color: #666666\">=0</span>,stop<span style=\"color: #666666\">=1</span>,num<span style=\"color: #666666\">=20</span>),\n\t\t<span style=\"color: #BA2121\">\"y\"</span>:np<span style=\"color: #666666\">.</span>linspace(start<span style=\"color: #666666\">=0</span>,stop<span style=\"color: #666666\">=1</span>,num<span style=\"color: #666666\">=20</span>)\n\t})\n</pre></div>\n</td></tr></tbody></table></center><br>",
+                        "df[\"x\"].map(lambda x: x**2)"
+                    ],
+                    "guid": "iC$4{Xo)D[",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Add (20,20) to df with index \"anomaly\"",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3\n4\n5\n6\n7</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000; font-weight: bold\">import</span> <span style=\"color: #0000FF; font-weight: bold\">pandas</span> <span style=\"color: #008000; font-weight: bold\">as</span> <span style=\"color: #0000FF; font-weight: bold\">pd</span>\n<span style=\"color: #008000; font-weight: bold\">import</span> <span style=\"color: #0000FF; font-weight: bold\">numpy</span> <span style=\"color: #008000; font-weight: bold\">as</span> <span style=\"color: #0000FF; font-weight: bold\">np</span>\ndf <span style=\"color: #666666\">=</span> pd<span style=\"color: #666666\">.</span>DataFrame(\n\t{\n\t\t<span style=\"color: #BA2121\">\"x\"</span>:np<span style=\"color: #666666\">.</span>linspace(start<span style=\"color: #666666\">=0</span>,stop<span style=\"color: #666666\">=1</span>,num<span style=\"color: #666666\">=20</span>),\n\t\t<span style=\"color: #BA2121\">\"y\"</span>:np<span style=\"color: #666666\">.</span>linspace(start<span style=\"color: #666666\">=0</span>,stop<span style=\"color: #666666\">=1</span>,num<span style=\"color: #666666\">=20</span>)\n\t})\n</pre></div>\n</td></tr></tbody></table></center><br>",
+                        "df.loc[\"anomaly\"] = [20,20]"
+                    ],
+                    "guid": "c3IKa9Az$1",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Create a new column called \"serie\" on df equal to 1,2,3,4,...",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000; font-weight: bold\">import</span> <span style=\"color: #0000FF; font-weight: bold\">pandas</span> <span style=\"color: #008000; font-weight: bold\">as</span> <span style=\"color: #0000FF; font-weight: bold\">pd</span>\n<span style=\"color: #008000; font-weight: bold\">import</span> <span style=\"color: #0000FF; font-weight: bold\">numpy</span> <span style=\"color: #008000; font-weight: bold\">as</span> <span style=\"color: #0000FF; font-weight: bold\">np</span> \ndf <span style=\"color: #666666\">=</span> pd<span style=\"color: #666666\">.</span>DataFrame(np<span style=\"color: #666666\">.</span>arange(<span style=\"color: #666666\">0</span>,<span style=\"color: #666666\">100</span>))\n</pre></div>\n</td></tr></tbody></table></center><br>",
+                        "df[\"serie\"] = [x for x in range(1,101)]"
+                    ],
+                    "guid": "N&he?g)Pg@",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Create a new column called \"is\\_miss\" on df where all tuples equal \"Missing, sorry\"",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000; font-weight: bold\">import</span> <span style=\"color: #0000FF; font-weight: bold\">pandas</span> <span style=\"color: #008000; font-weight: bold\">as</span> <span style=\"color: #0000FF; font-weight: bold\">pd</span>\n<span style=\"color: #008000; font-weight: bold\">import</span> <span style=\"color: #0000FF; font-weight: bold\">numpy</span> <span style=\"color: #008000; font-weight: bold\">as</span> <span style=\"color: #0000FF; font-weight: bold\">np</span> \ndf <span style=\"color: #666666\">=</span> pd<span style=\"color: #666666\">.</span>DataFrame(np<span style=\"color: #666666\">.</span>arange(<span style=\"color: #666666\">0</span>,<span style=\"color: #666666\">10</span>))\n</pre></div>\n</td></tr></tbody></table></center><br>",
+                        "df[\"is_miss\"] = \"Missing, sorry\""
+                    ],
+                    "guid": "Mwy}yI:dir",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Create a new column on df called 'one' equal 1 for all tuples",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000; font-weight: bold\">import</span> <span style=\"color: #0000FF; font-weight: bold\">pandas</span> <span style=\"color: #008000; font-weight: bold\">as</span> <span style=\"color: #0000FF; font-weight: bold\">pd</span>\n<span style=\"color: #008000; font-weight: bold\">import</span> <span style=\"color: #0000FF; font-weight: bold\">numpy</span> <span style=\"color: #008000; font-weight: bold\">as</span> <span style=\"color: #0000FF; font-weight: bold\">np</span> \ndf <span style=\"color: #666666\">=</span> pd<span style=\"color: #666666\">.</span>DataFrame(np<span style=\"color: #666666\">.</span>arange(<span style=\"color: #666666\">0</span>,<span style=\"color: #666666\">10</span>))\n</pre></div>\n</td></tr></tbody></table></center><br>",
+                        "df[\"one\"] = 1"
+                    ],
+                    "guid": "lfFf}Kg96[",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Create DataFrame from dictonary, list or numpy array and assign to df",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3\n4\n5\n6\n7\n8\n9</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000; font-weight: bold\">import</span> <span style=\"color: #0000FF; font-weight: bold\">numpy</span> <span style=\"color: #008000; font-weight: bold\">as</span> <span style=\"color: #0000FF; font-weight: bold\">np</span>\n<span style=\"color: #008000; font-weight: bold\">import</span> <span style=\"color: #0000FF; font-weight: bold\">pandas</span> <span style=\"color: #008000; font-weight: bold\">as</span> <span style=\"color: #0000FF; font-weight: bold\">pd</span>\nd <span style=\"color: #666666\">=</span> {\n    <span style=\"color: #BA2121\">\"col1\"</span>:<span style=\"color: #666666\">1</span>,\n    <span style=\"color: #BA2121\">\"col2\"</span>:<span style=\"color: #BA2121\">\"hola\"</span>,\n    <span style=\"color: #BA2121\">\"col3\"</span>:[x <span style=\"color: #008000; font-weight: bold\">for</span> x <span style=\"color: #AA22FF; font-weight: bold\">in</span> <span style=\"color: #008000\">range</span>(<span style=\"color: #666666\">10</span>)]\n}\nl <span style=\"color: #666666\">=</span> [x <span style=\"color: #008000; font-weight: bold\">for</span> x <span style=\"color: #AA22FF; font-weight: bold\">in</span> <span style=\"color: #008000\">range</span>(<span style=\"color: #666666\">100</span>)]\na <span style=\"color: #666666\">=</span> np<span style=\"color: #666666\">.</span>arange(<span style=\"color: #666666\">0</span>,<span style=\"color: #666666\">10</span>,<span style=\"color: #666666\">0.5</span>)\n</pre></div>\n</td></tr></tbody></table></center><br>",
+                        "df = pd.DataFrame(d)<br>df = pd.DataFrame(l)<br>df = pd.DataFrame(a)"
+                    ],
+                    "guid": "mQ*q!ud}pL",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Create Series such that<br>\\begin{itemize}<br>\\item numpy from 1 to 28<br>\\item named February<br>\\item index as date from 1st February to 28th February<br>\\item type int8<br>\\item save it to \"ser\"<br>\\end{itemize}",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000; font-weight: bold\">import</span> <span style=\"color: #0000FF; font-weight: bold\">pandas</span> <span style=\"color: #008000; font-weight: bold\">as</span> <span style=\"color: #0000FF; font-weight: bold\">pd</span>\n<span style=\"color: #008000; font-weight: bold\">import</span> <span style=\"color: #0000FF; font-weight: bold\">numpy</span> <span style=\"color: #008000; font-weight: bold\">as</span> <span style=\"color: #0000FF; font-weight: bold\">np</span>\n</pre></div>\n</td></tr></tbody></table></center><br>",
+                        "ser = pd.Series(np.arange(1,29), name=\"February\", index=pd.date_range(start=\"2022/02/01\", periods=28, freq=\"D\"), dtype=\"int8\")"
+                    ],
+                    "guid": "p2z_#9W-yb",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Drop columns \"col1\" and \"col2\" from df",
+                        ".",
+                        "df.drop([\"col1\", \"col2\"], axis=1)"
+                    ],
+                    "guid": "fRfphlP!lR",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Drop index 0 to 10&nbsp;",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">df <span style=\"color: #666666\">=</span> pd<span style=\"color: #666666\">.</span>DataFrame(np<span style=\"color: #666666\">.</span>random<span style=\"color: #666666\">.</span>randint(low<span style=\"color: #666666\">=1</span>, high<span style=\"color: #666666\">=10</span>, size<span style=\"color: #666666\">=</span>(<span style=\"color: #666666\">20</span>,<span style=\"color: #666666\">4</span>)))\n</pre></div>\n</td></tr></tbody></table></center><br>",
+                        "df.drop([x for x in range(0,11)], axis=0)"
+                    ],
+                    "guid": "OD>.U;<Hu~",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "First 20 tuples in df",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000; font-weight: bold\">import</span> <span style=\"color: #0000FF; font-weight: bold\">pandas</span> <span style=\"color: #008000; font-weight: bold\">as</span> <span style=\"color: #0000FF; font-weight: bold\">pd</span>\ndf <span style=\"color: #666666\">=</span> pd<span style=\"color: #666666\">.</span>read_csv(<span style=\"color: #BA2121\">\"filename.csv\"</span>)\n</pre></div>\n</td></tr></tbody></table></center><br>",
+                        "df.head(20)"
+                    ],
+                    "guid": "vW8GMs*+E1",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "From df generate a Series object with the column \"sales\" and save it to \"ser\"",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000; font-weight: bold\">import</span> <span style=\"color: #0000FF; font-weight: bold\">pandas</span> <span style=\"color: #008000; font-weight: bold\">as</span> <span style=\"color: #0000FF; font-weight: bold\">pd</span>\ndf <span style=\"color: #666666\">=</span> pd<span style=\"color: #666666\">.</span>read_csv(<span style=\"color: #BA2121\">\"sales.csv\"</span>)\n</pre></div>\n</td></tr></tbody></table></center><br>",
+                        "ser = df[\"sales\"]"
+                    ],
+                    "guid": "I}BA4AI/Ey",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Get $f(x,y)=9x + (y+3)^2+ \\alpha$ converting to numpy arrays, $\\alpha=9$",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3\n4\n5\n6\n7</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000; font-weight: bold\">import</span> <span style=\"color: #0000FF; font-weight: bold\">pandas</span> <span style=\"color: #008000; font-weight: bold\">as</span> <span style=\"color: #0000FF; font-weight: bold\">pd</span>\n<span style=\"color: #008000; font-weight: bold\">import</span> <span style=\"color: #0000FF; font-weight: bold\">numpy</span> <span style=\"color: #008000; font-weight: bold\">as</span> <span style=\"color: #0000FF; font-weight: bold\">np</span>\ndf <span style=\"color: #666666\">=</span> pd<span style=\"color: #666666\">.</span>DataFrame(\n\t{\n\t\t<span style=\"color: #BA2121\">\"x\"</span>:np<span style=\"color: #666666\">.</span>linspace(start<span style=\"color: #666666\">=0</span>,stop<span style=\"color: #666666\">=1</span>,num<span style=\"color: #666666\">=20</span>),\n\t\t<span style=\"color: #BA2121\">\"y\"</span>:np<span style=\"color: #666666\">.</span>linspace(start<span style=\"color: #666666\">=0</span>,stop<span style=\"color: #666666\">=1</span>,num<span style=\"color: #666666\">=20</span>)\n\t})\n</pre></div>\n</td></tr></tbody></table></center><br>",
+                        "df.apply(lambda x, alpha: 9*x[0]+(x[1]+3)**2+alpha, raw=True, axis=1, args=[9])"
+                    ],
+                    "guid": "Bd%S|qhFqV",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                }
+            ]
+        },
+        {
+            "__type__": "Deck",
+            "children": [],
+            "crowdanki_uuid": "e7b6a356-9c1a-11ec-af94-d17075e88979",
+            "deck_config_uuid": "e7b6a329-9c1a-11ec-af94-d17075e88979",
+            "desc": "",
+            "dyn": 0,
+            "extendNew": 10,
+            "extendRev": 50,
+            "media_files": [],
+            "name": "probabilidad y estadística",
+            "notes": [
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Esperanza matemática",
+                        "\\begin{align*}<br>&nbsp;&nbsp;&nbsp; E[X] &amp;= \\int_{-\\infty}^\\infty x f(x)dx \\\\<br>&nbsp;&nbsp;&nbsp; E[X] &amp;= \\sum_x x P[X=x] \\\\<br>&nbsp;&nbsp;&nbsp; E[\\alpha_1 X_1 + \\alpha_2 X_2] &amp;= \\alpha_1 E[X_1] + \\alpha_2 E[X_2] \\\\<br>&nbsp;&nbsp;&nbsp; E[\\kappa] &amp;= \\kappa \\\\<br>&nbsp;&nbsp;&nbsp; E[XY] &amp;= E[X]E[Y] \\qquad \\text{iff X,Y independientes}<br>\\end{align*}",
+                        ""
+                    ],
+                    "guid": "C&rZ&~(NfL",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Varianza",
+                        "\\begin{align*}<br>&nbsp;&nbsp;&nbsp; Var(X) &amp;= E[(X-\\mu)^2]\\\\<br>&nbsp;&nbsp;&nbsp; Var(X) &amp;= E[X^2]-E^2[X]\\\\<br>&nbsp;&nbsp;&nbsp; Var(X) &amp;\\ge 0\\\\<br>&nbsp;&nbsp;&nbsp; Var(\\kappa) &amp;= 0\\\\<br>&nbsp;&nbsp;&nbsp; Var(aX + bY) &amp;= a^2Var(X) + b^2Var(Y) + 2ab Cov(X,Y)\\\\<br>&nbsp;&nbsp;&nbsp; Var(aX + bY) &amp;= a^2Var(X) + b^2Var(Y) \\text{ iff X,Y independientes}\\\\<br>\\end{align*}",
+                        ""
+                    ],
+                    "guid": "v0IXSe.Ls~",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Covarianza",
+                        "\\begin{align*}<br>&nbsp;&nbsp;&nbsp; Cov(X,Y) &amp;= E[(X-\\mu_X)(Y-\\mu_Y)]\\\\<br>&nbsp;&nbsp;&nbsp; &amp;= E[XY] - E[X]E[Y]\\\\<br>&nbsp;&nbsp;&nbsp; Cov(X,Y) &amp;= E[XY] \\text{ iff X,Y independientes}\\\\<br>&nbsp;&nbsp;&nbsp; Cov(\\vec{X}) &amp;= \\begin{bmatrix}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cov(X_1,X_1) &amp; Cov(X_1,X_2) &amp; \\cdots &amp; Cov(X_1,X_n)\\\\<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cov(X_2,X_1) &amp; Cov(X_2,X_2) &amp; \\cdots &amp; Cov(X_2,X_n)\\\\<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\vdots &amp; \\vdots &amp; \\ddots &amp; \\vdots \\\\<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cov(X_n,X_1) &amp; Cov(X_n,X_2) &amp; \\cdots &amp; Cov(X_n,X_n)<br>&nbsp;&nbsp;&nbsp; \\end{bmatrix}\\\\<br>&nbsp;&nbsp;&nbsp; Cov(X,X) &amp;= Var(X)\\\\<br>&nbsp;&nbsp;&nbsp; Cov(X,Y) &amp;= Cov(Y,X)\\\\<br>&nbsp;&nbsp;&nbsp; Cov(aX,bY) &amp;= abCov(X,Y)\\\\<br>&nbsp;&nbsp;&nbsp; Cov(X,\\kappa) &amp;= 0\\\\<br>&nbsp;&nbsp;&nbsp; Cov(X+a, Y+b) &amp;= Cov(X,Y)\\\\<br>&nbsp;&nbsp;&nbsp; Cov(aX+bY, U) &amp;= aCov(X,U) + bCov(Y,U)<br>\\end{align*}",
+                        ""
+                    ],
+                    "guid": "IdayTl9/>t",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Correlación",
+                        "\\begin{align*}<br>&nbsp;&nbsp;&nbsp; Corr(X,Y) &amp;= \\frac{Cov(X,Y)}{\\sigma_X \\sigma_Y}<br>\\end{align*}",
+                        ""
+                    ],
+                    "guid": "cBh<FM~l@(",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Con reemplazo",
+                        "Método de muestreo en el cuál un elemento seleccionado se devuelve a la población después de ser seleccionado y antes de seleccionar otro elemento ",
+                        ""
+                    ],
+                    "guid": "3)F1U",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Sin reemplazo ",
+                        "Método de muestreo en el cuál los elementos no regresan a la población tras ser seleccionados. Un elemento sólo puede aparecer una vez en la muestra. ",
+                        ""
+                    ],
+                    "guid": "x,{;U",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                }
+            ]
+        },
+        {
+            "__type__": "Deck",
+            "children": [],
+            "crowdanki_uuid": "eb93fcb6-9c1a-11ec-af94-d17075e88979",
+            "deck_config_uuid": "e7b6a329-9c1a-11ec-af94-d17075e88979",
+            "desc": "",
+            "dyn": 0,
+            "extendNew": 0,
+            "extendRev": 0,
+            "media_files": [],
+            "name": "pronosticos",
+            "notes": [
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Proceso estocástico",
+                        "Sucesión infinita de variables aleatorias $\\{ X_t | t\\in T\\}$ donde $T$ es el espacio paramétrico, que toman valores en $S$ llamado espacio de estados.<br><br>Si es un proceso a tiempo continuo $t\\in T\\subset \\mathcal{R}$<br>Si es un proceso a tiempo discreto $t\\in T\\subset \\{1,2,3,...\\}$",
+                        ""
+                    ],
+                    "guid": "r-~SOW6SYm",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Proceso estacionario",
+                        "${X_t}$ es un proceso estacionario en el sentido estricto(fuertemente o completamente) si para cualesquiera $t_1,t_2, ..., t_n, n&gt;0$, $h&gt;0$ tenemos que&nbsp;<br>$$<br>(X_{t_1},...,X_{t_n}) =^d (X_{t_1+h},...,X_{t_n+h}), \\forall n \\in \\mathbb{N}<br>$$<br>Es decir es estacionario en el sentido estricto si es estacionario en distribución de n-ésimo orden para toda n.",
+                        ""
+                    ],
+                    "guid": "g,0}[3S,*x",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Proceso estocástico de segundo orden",
+                        "Se dice que el proceso estocástico $\\{X_t\\}_{t\\in T}$ que toma valores en $S$ es de segundo orden si&nbsp;<br>$$<br>E[|X_t|^2]&lt; \\infty \\quad \\forall t\\in T<br>$$",
+                        ""
+                    ],
+                    "guid": "oetxUgJFC-",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Función de media y función de covarianza",
+                        "\\begin{align*}<br>&nbsp;&nbsp;&nbsp; \\mu_X(t) &amp;= E[X_t]\\\\<br>&nbsp;&nbsp;&nbsp; r_X(s,t) &amp;= Cov(X_s,X_t)\\\\<br>&nbsp;&nbsp;&nbsp; &amp;= E[(X_s-\\mu_X(s))(X_t-\\mu_X(t))]\\\\<br>&nbsp;&nbsp;&nbsp; &amp;= E[X_sX_t] - E[X_s]E[X_t]\\\\<br>&nbsp;&nbsp;&nbsp; Var(X_t) &amp;= Cov(X_t,X_t)<br>\\end{align*}",
+                        ""
+                    ],
+                    "guid": "Ka9[Ge!~I+",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Ruido blanco",
+                        "El ruido blanco es un proceso estocástico a tiempo discreto donde<br>$Y_t = \\varepsilon_t $ y tenemos que $\\varepsilon_t\\sim WN(0,\\sigma^2)$. $\\varepsilon_t$ tiene que cumplir con<br>\\begin{itemize}<br>\\item $E[\\varepsilon_t \\varepsilon_t] = Var(\\varepsilon_t) = \\sigma^2 = Cov(\\varepsilon_t, \\varepsilon_t)$<br>\\item $E[\\varepsilon_t] = 0$<br>\\item $\\varepsilon_t$ es una colección de v.a.i.i.d<br>\\end{itemize}",
+                        ""
+                    ],
+                    "guid": "KB)^BZsc:,",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Proceso estacionario en distribución de n-ésimo orden",
+                        "Un proceso es estacionario en distribución de n-ésimo orden si&nbsp;<br>$$<br>F_{Z_{t_1},...,Z_{t_n}}(x_1,...,x_n) = F_{Z_{t_1+h},...,Z_{t_n+h}}(x_1,...,x_n)<br>$$<br>Para toda n-ada $(t_1,...,t_n)$ y $h$ de enteros.",
+                        ""
+                    ],
+                    "guid": "w50nKu1I=N",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Proceso débilmente estacionario de segundo orden",
+                        "Se dice que $X(t), \\quad -\\infty&lt;t&lt;\\infty$ es un proceso débilmente estacionario de segundo orden si $\\forall \\tau \\quad Y(t) =X(t+\\tau), \\quad -\\infty&lt;t&lt;\\infty$ tiene las mismas funciones de media y covarianza que $X(t)$. $Y(t)$ siendo de segundo orden.<br><br>También se le llama estacionario en sentido amplio o estacionario en covarianza.<br><br>El proceso débilmente estacionario en distribución de segundo orden es un proceso estrictamente estacionario de segundo orden con la restricción de sus primeros momentos sean finitos.",
+                        ""
+                    ],
+                    "guid": "mupHz^GybJ",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Teorema de equivalencia de proceso débilmente estacionario de segundo orden",
+                        "$X(t), \\quad -\\infty &lt;t&lt;\\infty$<br><br>$E[X^2] &lt; \\infty$<br><br>$Y(t) = X(t+\\tau)$<br><br>$\\Rightarrow$<br><br>[<br><br>$\\mu_X(t) = \\mu_Y(t)$, $r_X(s,t)=r_Y(s,t)$&nbsp;<br><br>$\\Leftrightarrow$<br><br>&nbsp;$\\mu_X(t)=\\kappa $, $r_X(s,t) = f(t-s)$<br><br>]",
+                        ""
+                    ],
+                    "guid": "EV1|2C,Syz",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Fórmulas para un proceso estacionario de segundo orden",
+                        "\\begin{align*}<br>r_X(s,t) &amp;= r_X(0,t-s)\\\\<br>&amp;= r_X(t-s)\\\\<br>r_X(t)&amp;= r_X(-t)\\\\<br>r_X(0) &amp;= Var(X_t) \\\\<br>\\mu_X(t) &amp;= \\kappa\\\\<br>\\rho_X(\\tau)&amp;= \\frac{r_X(t)}{r_X(0)}<br>\\end{align*}",
+                        ""
+                    ],
+                    "guid": "J;9S$-h7_r",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Pronóstico",
+                        "Es la \\textbf{estimación} de una variable respuesta \\textbf{cuantitativa desconocida} tomando en cuenta factores del \\textbf{pasado} y encaminadas hacia un evento \\textbf{futuro}, ocupando modelos con ciertos \\textbf{supuestos o condiciones}",
+                        ""
+                    ],
+                    "guid": "d/+mltv_(b",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Serie temporal",
+                        "\\textbf{Secuencia} de variables aleatorias ordenadas \\textbf{cronológicamente} y \\textbf{equidistantes} en el tiempo.",
+                        ""
+                    ],
+                    "guid": "xPf5L*s*}c",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                }
+            ]
+        },
+        {
+            "__type__": "Deck",
+            "children": [],
+            "crowdanki_uuid": "eb93fcdb-9c1a-11ec-af94-d17075e88979",
+            "deck_config_uuid": "e7b6a329-9c1a-11ec-af94-d17075e88979",
+            "desc": "",
+            "dyn": 0,
+            "extendNew": 0,
+            "extendRev": 0,
+            "media_files": [],
+            "name": "python",
+            "notes": [
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "JSON methods on python",
+                        "",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3\n4\n5\n6\n7</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">json<span style=\"color: #666666\">.</span>load(<span style=\"color: #008000\">open</span>(<span style=\"color: #BA2121\">\"cred.json\"</span>, <span style=\"color: #BA2121\">\"rb\"</span>)) <span style=\"color: #408080; font-style: italic\"># returns object</span>\njson<span style=\"color: #666666\">.</span>loads(json_str) <span style=\"color: #408080; font-style: italic\"># returns object</span>\njson<span style=\"color: #666666\">.</span>dumps(<span style=\"color: #008000\">object</span>) <span style=\"color: #408080; font-style: italic\"># return string</span>\njson<span style=\"color: #666666\">.</span>dump(<span style=\"color: #008000\">object</span>, file) <span style=\"color: #408080; font-style: italic\"># parse pyobject to json and save in file</span>\n<span style=\"color: #408080; font-style: italic\">#options </span>\n<span style=\"color: #408080; font-style: italic\">#sort_keys = True</span>\n<span style=\"color: #408080; font-style: italic\">#indent=4</span>\n</pre></div>\n</td></tr></tbody></table>loads == \"load string\"</center>"
+                    ],
+                    "guid": "K`3}]N[B4D",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Python installation with jupyter and add kernel",
+                        "Python installation with jupyter and add kernel",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3\n4\n5\n6</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #408080; font-style: italic\">#Create env</span>\npython3 -m venv env\n<span style=\"color: #008000\">source</span> env/bin/activate\npip install jupyter\nipython kernel install --user --name<span style=\"color: #666666\">=</span>env\njupyter kernelspec uninstall envname\n</pre></div>\n</td></tr></tbody></table></center>"
+                    ],
+                    "guid": "vPD;3vVg2L",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Get a list with the values z=x+y",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">l1 <span style=\"color: #666666\">=</span> [i <span style=\"color: #008000; font-weight: bold\">for</span> i <span style=\"color: #AA22FF; font-weight: bold\">in</span> <span style=\"color: #008000\">range</span>(<span style=\"color: #666666\">0</span>,<span style=\"color: #666666\">12</span>)]\nl2 <span style=\"color: #666666\">=</span> [i <span style=\"color: #008000; font-weight: bold\">for</span> i <span style=\"color: #AA22FF; font-weight: bold\">in</span> <span style=\"color: #008000\">range</span>(<span style=\"color: #666666\">0</span>,<span style=\"color: #666666\">24</span>,<span style=\"color: #666666\">2</span>)]\n</pre></div>\n</td></tr></tbody></table></center>",
+                        "list(map(lambda x,y: x+y, l1, l2))"
+                    ],
+                    "guid": "wsD&wZpN/@",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Filter values from a normal distribution such that $x\\ge 0$",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000; font-weight: bold\">from</span> <span style=\"color: #0000FF; font-weight: bold\">scipy.stats</span> <span style=\"color: #008000; font-weight: bold\">import</span> norm\nsample <span style=\"color: #666666\">=</span> norm<span style=\"color: #666666\">.</span>rvs(size<span style=\"color: #666666\">=100</span>)\n</pre></div>\n</td></tr></tbody></table></center><br>",
+                        "filter(lambda x: x&gt;=0, sample)"
+                    ],
+                    "guid": "h.EEM>2:@j",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Get the sum of all values in $x$ (using reduce)",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">my_list <span style=\"color: #666666\">=</span> [x <span style=\"color: #008000; font-weight: bold\">for</span> x <span style=\"color: #AA22FF; font-weight: bold\">in</span> <span style=\"color: #008000\">range</span>(<span style=\"color: #666666\">101</span>)]\n</pre></div>\n</td></tr></tbody></table></center>",
+                        "from functools import reduce<br>reduce(lambda x,y: x+y, my_list)"
+                    ],
+                    "guid": "q/Q:16G{7L",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Convert the following code to one line",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">rho <span style=\"color: #666666\">=</span> initial\n<span style=\"color: #008000; font-weight: bold\">for</span> x <span style=\"color: #AA22FF; font-weight: bold\">in</span> my_iter:\n    rho <span style=\"color: #666666\">=</span> rho <span style=\"color: #666666\">+</span> x\n</pre></div>\n</td></tr></tbody></table></center>",
+                        "from functools import reduce<br>reduce(lambda x,y; x+y, my_iter, initial)"
+                    ],
+                    "guid": "hN*Kk6ub!Y",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "sqlalchemy connection",
+                        "Use sqlalchemy",
+                        "from sqlalchemy import create_engine<br>import json<br>with open(\"cred.json\") as f:<br>&nbsp;&nbsp;&nbsp; cred = json.load(f)<br>flavor=\"mysql\"<br>client=\"pymysql\"<br>host, port, passwd, user, db = cred.values()<br>conn = create_engine(f\"{flavor}+{client}://{user}:{passwd}@{host}:{port}/{db}\").connect()"
+                    ],
+                    "guid": "F8Q=I@*IEu",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Show tables in the database sql with sqlalchemy to a dataframe",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3\n4\n5\n6\n7\n8</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000; font-weight: bold\">from</span> <span style=\"color: #0000FF; font-weight: bold\">sqlalchemy</span> <span style=\"color: #008000; font-weight: bold\">import</span> create_engine\n<span style=\"color: #008000; font-weight: bold\">import</span> <span style=\"color: #0000FF; font-weight: bold\">json</span>\n<span style=\"color: #008000; font-weight: bold\">with</span> <span style=\"color: #008000\">open</span>(<span style=\"color: #BA2121\">\"cred.json\"</span>) <span style=\"color: #008000; font-weight: bold\">as</span> f:\n    cred <span style=\"color: #666666\">=</span> json<span style=\"color: #666666\">.</span>load(f)\nflavor<span style=\"color: #666666\">=</span><span style=\"color: #BA2121\">\"mysql\"</span>\nclient<span style=\"color: #666666\">=</span><span style=\"color: #BA2121\">\"pymysql\"</span>\nhost, port, passwd, user, db <span style=\"color: #666666\">=</span> cred<span style=\"color: #666666\">.</span>values()\nconn <span style=\"color: #666666\">=</span> create_engine(f<span style=\"color: #BA2121\">\"{flavor}+{client}://{user}:{passwd}@{host}:{port}/{db}\"</span>)<span style=\"color: #666666\">.</span>connect()\n</pre></div>\n</td></tr></tbody></table></center><br>",
+                        "df = pd.read_sql(con=conn, sql=\"\"\"show tables;\"\"\")"
+                    ],
+                    "guid": "tDq`]?Q!X`",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                }
+            ]
+        }
+    ],
+    "crowdanki_uuid": "f090afc6-9c1e-11ec-af94-d17075e88979",
+    "deck_config_uuid": "e7b6a329-9c1a-11ec-af94-d17075e88979",
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig",
+            "autoplay": true,
+            "crowdanki_uuid": "e7b6a329-9c1a-11ec-af94-d17075e88979",
+            "dyn": false,
+            "interdayLearningMix": 0,
+            "lapse": {
+                "delays": [
+                    10.0
+                ],
+                "leechAction": 1,
+                "leechFails": 6,
+                "minInt": 1,
+                "mult": 0.0
+            },
+            "maxTaken": 60,
+            "name": "Predeterminado",
+            "new": {
+                "bury": false,
+                "delays": [
+                    1.0,
+                    3.0
+                ],
+                "initialFactor": 2500,
+                "ints": [
+                    1,
+                    2,
+                    0
+                ],
+                "order": 0,
+                "perDay": 20
+            },
+            "newGatherPriority": 0,
+            "newMix": 0,
+            "newPerDayMinimum": 0,
+            "newSortOrder": 0,
+            "replayq": true,
+            "rev": {
+                "bury": false,
+                "ease4": 1.2,
+                "hardFactor": 1.1,
+                "ivlFct": 1.0,
+                "maxIvl": 36500,
+                "perDay": 200
+            },
+            "reviewOrder": 0,
+            "timer": 0
+        }
+    ],
+    "desc": "",
+    "dyn": 0,
+    "extendNew": 0,
+    "extendRev": 0,
+    "media_files": [],
+    "name": "shared",
+    "note_models": [
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+            "css": ".card {\n  font-family: arial;\n  font-size: 20px;\n  text-align: center;\n  color: black;\n  background-color: white;\n}\n",
+            "flds": [
+                {
+                    "font": "Liberation Sans",
+                    "name": "Anverso",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "name": "Reverso",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "name": "Code",
+                    "ord": 2,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "Básico",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tmpls": [
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n[latex]\n{{Reverso}}\n[/latex]\n{{Code}}\n",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Tarjeta 1",
+                    "ord": 0,
+                    "qfmt": "[latex]\n{{Anverso}}\n[/latex]"
+                }
+            ],
+            "type": 0
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+            "css": ".card {\n  font-family: arial;\n  font-size: 20px;\n  text-align: center;\n  color: black;\n  background-color: white;\n}\n\ntextarea {\n  height: 300px;\n  padding:10px;\n  border:1px solid silver;\n}",
+            "flds": [
+                {
+                    "font": "Liberation Sans",
+                    "name": "Problem",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "name": "Hint",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "name": "Answer",
+                    "ord": 2,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "Code multiline",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0,
+                        1
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tmpls": [
+                {
+                    "afmt": "[latex]\n{{Problem}}\n[/latex]\n<br>\n<br>\n{{Hint}}\n<br>\n<br>\n[[typebox:Answer]]\n",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Card 1",
+                    "ord": 0,
+                    "qfmt": "[latex]\n{{Problem}}\n[/latex]\n<br>\n<br>\n{{Hint}}\n<br>\n<br>\n[[typebox:Answer]]"
+                }
+            ],
+            "type": 0
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "e90618a6-9c1a-11ec-af94-d17075e88979",
+            "css": "/* GENERAL CARD STYLE */\n.card {\n  font-family: \"Helvetica LT Std\", Helvetica, Arial, Sans;\n  font-size: 150%;\n  text-align: center;\n  color: black;\n  background-color: white;\n}\n\n/* OCCLUSION CSS START - don't edit this */\n#io-overlay {\n  position:absolute;\n  top:0;\n  width:100%;\n  z-index:3\n}\n\n#io-original {\n  position:relative;\n  top:0;\n  width:100%;\n  z-index:2;\n  visibility: hidden;\n}\n\n#io-wrapper {\n  position:relative;\n  width: 100%;\n}\n/* OCCLUSION CSS END */\n\n/* OTHER STYLES */\n#io-header{\n  font-size: 1.1em;\n  margin-bottom: 0.2em;\n}\n\n#io-footer{\n  max-width: 80%;\n  margin-left: auto;\n  margin-right: auto;\n  margin-top: 0.8em;\n  font-style: italic;\n}\n\n#io-extra-wrapper{\n  /* the wrapper is needed to center the\n  left-aligned blocks below it */\n  width: 80%;\n  margin-left: auto;\n  margin-right: auto;\n  margin-top: 0.5em;\n}\n\n#io-extra{\n  text-align:center;\n  display: inline-block;\n}\n\n.io-extra-entry{\n  margin-top: 0.8em;\n  font-size: 0.9em;\n  text-align:left;\n}\n\n.io-field-descr{\n  margin-bottom: 0.2em;\n  font-weight: bold;\n  font-size: 1em;\n}\n\n#io-revl-btn {\n  font-size: 0.5em;\n}\n\n/* ADJUSTMENTS FOR MOBILE DEVICES */\n\n.mobile .card, .mobile #content {\n  font-size: 120%;\n  margin: 0;\n}\n\n.mobile #io-extra-wrapper {\n  width: 95%;\n}\n\n.mobile #io-revl-btn {\n  font-size: 0.8em;\n}\n",
+            "flds": [
+                {
+                    "font": "Arial",
+                    "name": "ID (hidden)",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "name": "Header",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "name": "Image",
+                    "ord": 2,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "name": "Question Mask",
+                    "ord": 3,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "name": "Footer",
+                    "ord": 4,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "name": "Remarks",
+                    "ord": 5,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "name": "Sources",
+                    "ord": 6,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "name": "Extra 1",
+                    "ord": 7,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "name": "Extra 2",
+                    "ord": 8,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "name": "Answer Mask",
+                    "ord": 9,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "name": "Original Mask",
+                    "ord": 10,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "Image Occlusion Enhanced",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        2
+                    ]
+                ]
+            ],
+            "sortf": 1,
+            "tmpls": [
+                {
+                    "afmt": "{{#Image}}\n<div id=\"io-header\">{{Header}}</div>\n<div id=\"io-wrapper\">\n  <div id=\"io-overlay\">{{Answer Mask}}</div>\n  <div id=\"io-original\">{{Image}}</div>\n</div>\n{{#Footer}}<div id=\"io-footer\">{{Footer}}</div>{{/Footer}}\n<button id=\"io-revl-btn\" onclick=\"toggle();\">Toggle Masks</button>\n<div id=\"io-extra-wrapper\">\n  <div id=\"io-extra\">\n    {{#Remarks}}\n      <div class=\"io-extra-entry\">\n        <div class=\"io-field-descr\">Remarks</div>{{Remarks}}\n      </div>\n    {{/Remarks}}\n    {{#Sources}}\n      <div class=\"io-extra-entry\">\n        <div class=\"io-field-descr\">Sources</div>{{Sources}}\n      </div>\n    {{/Sources}}\n    {{#Extra 1}}\n      <div class=\"io-extra-entry\">\n        <div class=\"io-field-descr\">Extra 1</div>{{Extra 1}}\n      </div>\n    {{/Extra 1}}\n    {{#Extra 2}}\n      <div class=\"io-extra-entry\">\n        <div class=\"io-field-descr\">Extra 2</div>{{Extra 2}}\n      </div>\n    {{/Extra 2}}\n  </div>\n</div>\n\n<script>\n// Toggle answer mask on clicking the image\nvar toggle = function() {\n  var amask = document.getElementById('io-overlay');\n  if (amask.style.display === 'block' || amask.style.display === '')\n    amask.style.display = 'none';\n  else\n    amask.style.display = 'block'\n}\n\n// Prevent original image from loading before mask\naFade = 50, qFade = 0;\nvar mask = document.querySelector('#io-overlay>img');\nfunction loaded() {\n    var original = document.querySelector('#io-original');\n    original.style.visibility = \"visible\";\n}\nif (mask === null || mask.complete) {\n    loaded();\n} else {\n    mask.addEventListener('load', loaded);\n}\n</script>\n{{/Image}}\n",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "IO Card",
+                    "ord": 0,
+                    "qfmt": "{{#Image}}\n<div id=\"io-header\">{{Header}}</div>\n<div id=\"io-wrapper\">\n  <div id=\"io-overlay\">{{Question Mask}}</div>\n  <div id=\"io-original\">{{Image}}</div>\n</div>\n<div id=\"io-footer\">{{Footer}}</div>\n\n<script>\n// Prevent original image from loading before mask\naFade = 50, qFade = 0;\nvar mask = document.querySelector('#io-overlay>img');\nfunction loaded() {\n    var original = document.querySelector('#io-original');\n    original.style.visibility = \"visible\";\n}\nif (mask === null || mask.complete) {\n    loaded();\n} else {\n    mask.addEventListener('load', loaded);\n}\n</script>\n{{/Image}}\n"
+                }
+            ],
+            "type": 0
+        }
+    ],
+    "notes": []
+}
