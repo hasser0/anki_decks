@@ -637,9 +637,9 @@
                 {
                     "__type__": "Note",
                     "fields": [
-                        "Create a vector/array of size 1x4 with values (1,2,3,4) and save it to array",
+                        "Create a vector/array of size 1x4 with values (1,2,3,4)",
                         ".",
-                        "array = [1 2 3 4]"
+                        "[1 2 3 4]"
                     ],
                     "guid": "dkz*jk)!j4",
                     "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
@@ -670,9 +670,9 @@
                 {
                     "__type__": "Note",
                     "fields": [
-                        "Create a matrix of size 10x2 with columns 1:10 and 11:20 and save it to array",
+                        "Create a matrix of size 10x2 with columns 1:10 and 11:20",
                         ".",
-                        "array = [1:10 11:20]"
+                        "[1:10 11:20]"
                     ],
                     "guid": "G,x9v+zR<8",
                     "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
@@ -1283,8 +1283,8 @@
                 {
                     "__type__": "Note",
                     "fields": [
-                        "Segunda Forma Normal",
-                        "\\begin{itemize}<div>\\item Primera Forma Normal</div><div>\\item No relaciones parciales</div><div><div>\\end{itemize}</div></div>",
+                        "Second normal form (2NF)",
+                        "\\begin{itemize}<div>\\item Is in 1NF</div><div>\\item Every non-key attribute is fully dependent on primary key.</div><div>\\end{itemize}<br>\\tiny{Note: a primary key can be composed of more than one attribute}</div>",
                         ""
                     ],
                     "guid": "ASGO/6$YdR",
