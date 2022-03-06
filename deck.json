@@ -842,6 +842,281 @@
                     "guid": "H<,M9r.24k",
                     "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
                     "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Create a BigInt equals to 123456789_123456789_123456789_123456789",
+                        "use big",
+                        "big\"123456789123456789123456789123456789\""
+                    ],
+                    "guid": "hyVCI~B)Tx",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Create a BigFloat equals 0.123456789_123456789_123456789_123456789",
+                        "use big",
+                        "big\"0.123456789_123456789_123456789_123456789\""
+                    ],
+                    "guid": "A,&.7Lsk)B",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Create an abstract type called R2",
+                        ".",
+                        "abstract type R2 end"
+                    ],
+                    "guid": "C*EGwacM=3",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Create an abstract type DiagR2 which is subtype of R2",
+                        ".",
+                        "abstract type DiagR2 &lt;: R2 end"
+                    ],
+                    "guid": "M_^{6n^Ui_",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Print \"1\" if $x=9$ is of type Integer",
+                        ".",
+                        "if x::Integer == x<br>&nbsp; &nbsp; print(1)<br>end"
+                    ],
+                    "guid": "i!{>qphbOw",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "If Int8 is subtype of Integer, print \"1\"",
+                        ".",
+                        "if Int8&lt;:Integer<br>&nbsp; &nbsp; print(1)<br>end"
+                    ],
+                    "guid": "c%-f9&*Zkc",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Create a primitive type Boolean8 of 8 bits",
+                        ".",
+                        "primitive type Boolean8 8 end"
+                    ],
+                    "guid": "H}ZO@6H:OK",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Create a primitive type Int256 of 256 bits subtype of Integer",
+                        ".",
+                        "primitive type Int256 &lt;: Integer end"
+                    ],
+                    "guid": "c1HEsxdRjH",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Create an immutable composite type called Point with fields $x,y\\in$ Int8 and create an instance with values 0,1 (save it to p)",
+                        ".",
+                        "struct Point<br>&nbsp; &nbsp; x::Int8<br>&nbsp; &nbsp; y::Int8<br>end<br>p=Point(0,1)"
+                    ],
+                    "guid": "b[zn:Z:TG]",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "In Julia objects and functions are bundled together.",
+                        "False",
+                        ""
+                    ],
+                    "guid": "D.a>VID3>J",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "By default structs are immutable",
+                        "True",
+                        "."
+                    ],
+                    "guid": "H(rj3xw1H+",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Immutable structs can have mutable objects, this means that fields always point to the same object but the object can change if it's mutable.",
+                        "True",
+                        ""
+                    ],
+                    "guid": "pq~9zB<oSR",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "If two instances with the same field values might be same. Which kind of composite types should we use?",
+                        "Immutable",
+                        ""
+                    ],
+                    "guid": "f$Cjpl0w73",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "What is a Union?",
+                        "Is a special abstract type which includes as objects all instances of any of its argument types",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\"> 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #408080; font-style: italic\">#Returns true</span>\nvalue <span style=\"color: #666666\">=</span> <span style=\"color: #BA2121\">\"this is a string\"</span>\n<span style=\"color: #008000; font-weight: bold\">function</span> isoftype()\n\t<span style=\"color: #008000; font-weight: bold\">for</span> <font color=\"#008000\"><b>type</b></font> <span style=\"color: #008000\">in</span> <span style=\"color: #B00040\">Union</span>{String, <span style=\"color: #B00040\">Integer</span>, Float}<span style=\"color: #666666\">:</span>\n\t\t<span style=\"color: #008000; font-weight: bold\">if</span> value isavalue <span style=\"color: #008000; font-weight: bold\">type</span>\n\t\t\t<span style=\"color: #008000; font-weight: bold\">return</span> <span style=\"color: #008000; font-weight: bold\">true</span>\n\t\t<span style=\"color: #008000; font-weight: bold\">end</span>\n\t<span style=\"color: #008000; font-weight: bold\">end</span>\n\t<span style=\"color: #008000; font-weight: bold\">return</span> <span style=\"color: #008000; font-weight: bold\">false</span>\n<span style=\"color: #008000; font-weight: bold\">end</span>\n</pre></div>\n</td></tr></tbody></table></center><br>"
+                    ],
+                    "guid": "u|a^yc>0ht",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Create a mutable struct called Point with attributes $x,y \\in$ Int8",
+                        ".",
+                        "mutable struct Point<br>&nbsp; &nbsp; x::Int8<br>&nbsp; &nbsp; y::Int8<br>end"
+                    ],
+                    "guid": "KfOP@{7SRD",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Create a parametric composite type called Point with $x,y \\in$ T",
+                        ".",
+                        "struct Point{T}<br>&nbsp; &nbsp; x::T<br>&nbsp; &nbsp; y::T<br>end"
+                    ],
+                    "guid": "BB3Tx.^J{M",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Create a function called \"norm\" that takes p as a Point of type Real",
+                        ".",
+                        "function norm(p::Point{T} where T&lt;:Real)<br>&nbsp; &nbsp; return 0<br>end"
+                    ],
+                    "guid": "KTpQov{V`G",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "What will be the output of following code",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3\n4\n5\n6\n7\n8</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">struct Point{T}\n\tx<span style=\"color: #666666\">::</span>T\n\ty<span style=\"color: #666666\">::</span>T\n<span style=\"color: #008000; font-weight: bold\">end</span>\n\njulia<span style=\"color: #666666\">&gt;</span> Point{<span style=\"color: #B00040\">AbstractString</span>} <span style=\"color: #666666\">&lt;:</span> Point\njulia<span style=\"color: #666666\">&gt;</span> Point{<span style=\"color: #B00040\">Float64</span>} <span style=\"color: #666666\">&lt;:</span> Point{<span style=\"color: #B00040\">Int64</span>}\njulia<span style=\"color: #666666\">&gt;</span> Point{<span style=\"color: #B00040\">Int8</span>} <span style=\"color: #666666\">&lt;:</span> Point{<span style=\"color: #666666\">&lt;:</span><span style=\"color: #B00040\">Integer</span>}\n</pre></div>\n</td></tr></tbody></table></center><br>",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000; font-weight: bold\">true</span>\n<span style=\"color: #008000; font-weight: bold\">false</span>\n<span style=\"color: #008000; font-weight: bold\">true</span>\n</pre></div>\n</td></tr></tbody></table></center>"
+                    ],
+                    "guid": "O.$=wOpikM",
+                    "note_model_uuid": "988a4ff6-9d23-11ec-91bb-21a4fc219968",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "What is the output of following code",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\"> 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000; font-weight: bold\">abstract</span> <span style=\"color: #008000; font-weight: bold\">type</span> Pointy{T} <span style=\"color: #008000; font-weight: bold\">end</span>\n\nstruct Point{T} <span style=\"color: #666666\">&lt;:</span> Pointy{T}\n\tx<span style=\"color: #666666\">::</span>T\n\ty<span style=\"color: #666666\">::</span>T\n<span style=\"color: #008000; font-weight: bold\">end</span>\n\njulia<span style=\"color: #666666\">&gt;</span> Pointy{<span style=\"color: #B00040\">Float64</span>} <span style=\"color: #666666\">&lt;:</span> Pointy{<span style=\"color: #B00040\">Real</span>}\njulia<span style=\"color: #666666\">&gt;</span> Pointy{<span style=\"color: #B00040\">Float64</span>} <span style=\"color: #666666\">&lt;:</span> Pointy{<span style=\"color: #666666\">&lt;:</span><span style=\"color: #B00040\">Real</span>}\njulia<span style=\"color: #666666\">&gt;</span> Point{<span style=\"color: #B00040\">Float64</span>} <span style=\"color: #666666\">&lt;:</span> Pointy{<span style=\"color: #B00040\">Float64</span>}\n</pre></div>\n</td></tr></tbody></table></center><br>",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000; font-weight: bold\">false</span>\n<span style=\"color: #008000; font-weight: bold\">true</span>\n<span style=\"color: #008000; font-weight: bold\">true</span>\n</pre></div>\n</td></tr></tbody></table></center><br>"
+                    ],
+                    "guid": "z{ZO*v=QPW",
+                    "note_model_uuid": "988a4ff6-9d23-11ec-91bb-21a4fc219968",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Create an abstract parametric type calle Pointy parametrized by T <br><br>And concrete subtype of Pointy with T of type Real",
+                        ".",
+                        "abstract type Pointy{T} end<br>struct Point{T&lt;:Real} &lt;: Pointy{T}<br>&nbsp;&nbsp;&nbsp; x::T<br>&nbsp;&nbsp;&nbsp; y::T<br>end"
+                    ],
+                    "guid": "rUW@WLY/Hs",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Create an alias for Point{Int8} called PointInt8",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3\n4</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">struct Point{T}\n\tx<span style=\"color: #666666\">::</span>T\n\ty<span style=\"color: #666666\">::</span>T\n<span style=\"color: #008000; font-weight: bold\">end</span>\n</pre></div>\n</td></tr></tbody></table></center><br>",
+                        "const PointInt8 = Point{Int8}"
+                    ],
+                    "guid": "J[H4l]GAX!",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Assert wheter x is an Integer",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">x<span style=\"color: #666666\">=9</span>\n</pre></div>\n</td></tr></tbody></table></center>",
+                        "x isa Integer"
+                    ],
+                    "guid": "wSZ-B#*:ZO",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Assert wheter Int8 is a subtype of String",
+                        ".",
+                        "Int8 &lt;: String"
+                    ],
+                    "guid": "Gch&(#@Y0a",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Print supertype of Int8",
+                        ".",
+                        "supertype(Int8)"
+                    ],
+                    "guid": "ccvFg+8{wP",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Pretty print like $r\\cdot exp(\\theta\\cdot im)$",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3\n4</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">struct Polar{T<span style=\"color: #666666\">&lt;:</span><span style=\"color: #B00040\">Real</span>} <span style=\"color: #666666\">&lt;:</span> <span style=\"color: #B00040\">Number</span>\n\tr<span style=\"color: #666666\">::</span>T\n\ttheta<span style=\"color: #666666\">::</span>T\n<span style=\"color: #008000; font-weight: bold\">end</span>\n</pre></div>\n</td></tr></tbody></table></center>",
+                        ""
+                    ],
+                    "guid": "wOO`vjzTB,",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
                 }
             ]
         },
@@ -1123,7 +1398,12 @@
             "dyn": 0,
             "extendNew": 0,
             "extendRev": 0,
-            "media_files": [],
+            "media_files": [
+                "paste-4f16f610d2702d14334ee359e0fb057fc6c8fe23.jpg",
+                "paste-692a1b98bdfb934c10d2ed71f664b8afac52f419.jpg",
+                "paste-f1c8bc86e371f4caa4ef353db068b9829ac53774.jpg",
+                "paste-f68e8801710c6b4701b1f857b1845fcdc8f9d602.jpg"
+            ],
             "name": "mineria de datos",
             "notes": [
                 {
@@ -1284,8 +1564,8 @@
                     "__type__": "Note",
                     "fields": [
                         "Second normal form (2NF)",
-                        "\\begin{itemize}<div>\\item Is in 1NF</div><div>\\item Every non-key attribute is fully dependent on primary key.</div><div>\\end{itemize}<br>\\tiny{Note: a primary key can be composed of more than one attribute}</div>",
-                        ""
+                        "\\begin{itemize}<div>\\item Is in 1NF</div><div>\\item One column primary key<br>\\end{itemize}<br></div><div>\\tiny{Note: a primary key can be composed of more than one attribute}</div>",
+                        "<br>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br><br><img src=\"paste-692a1b98bdfb934c10d2ed71f664b8afac52f419.jpg\"><br><br>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br><br><img src=\"paste-f68e8801710c6b4701b1f857b1845fcdc8f9d602.jpg\">"
                     ],
                     "guid": "ASGO/6$YdR",
                     "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
@@ -1294,9 +1574,9 @@
                 {
                     "__type__": "Note",
                     "fields": [
-                        "Tercera Forma Normal",
-                        "\\begin{itemize}<div>\\item Segunda Forma Normal</div><div>\\item No dependencias transitivas (Dividir en más tablas)<br><div>\\end{itemize}</div></div>",
-                        ""
+                        "Third normal form (3NF)",
+                        "\\begin{itemize}<div>\\item Second normal form</div><div>\\item Non-primary key attributes has no functional dependency on other non-primary key<br><div>\\end{itemize}<br>In the following image, Membership ID $\\rightarrow$ Full names, Full names $\\rightarrow$ Salutation.<br><br></div></div>",
+                        "<br>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br><br><img src=\"paste-4f16f610d2702d14334ee359e0fb057fc6c8fe23.jpg\"><br><br>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br><img src=\"paste-f1c8bc86e371f4caa4ef353db068b9829ac53774.jpg\">"
                     ],
                     "guid": "m&I;S;Z+4C",
                     "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
@@ -1818,7 +2098,7 @@
                     "__type__": "Note",
                     "fields": [
                         "Covarianza",
-                        "\\begin{align*}<br>&nbsp;&nbsp;&nbsp; Cov(X,Y) &amp;= E[(X-\\mu_X)(Y-\\mu_Y)]\\\\<br>&nbsp;&nbsp;&nbsp; &amp;= E[XY] - E[X]E[Y]\\\\<br>&nbsp;&nbsp;&nbsp; Cov(X,Y) &amp;= E[XY] \\text{ iff X,Y independientes}\\\\<br>&nbsp;&nbsp;&nbsp; Cov(\\vec{X}) &amp;= \\begin{bmatrix}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cov(X_1,X_1) &amp; Cov(X_1,X_2) &amp; \\cdots &amp; Cov(X_1,X_n)\\\\<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cov(X_2,X_1) &amp; Cov(X_2,X_2) &amp; \\cdots &amp; Cov(X_2,X_n)\\\\<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\vdots &amp; \\vdots &amp; \\ddots &amp; \\vdots \\\\<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cov(X_n,X_1) &amp; Cov(X_n,X_2) &amp; \\cdots &amp; Cov(X_n,X_n)<br>&nbsp;&nbsp;&nbsp; \\end{bmatrix}\\\\<br>&nbsp;&nbsp;&nbsp; Cov(X,X) &amp;= Var(X)\\\\<br>&nbsp;&nbsp;&nbsp; Cov(X,Y) &amp;= Cov(Y,X)\\\\<br>&nbsp;&nbsp;&nbsp; Cov(aX,bY) &amp;= abCov(X,Y)\\\\<br>&nbsp;&nbsp;&nbsp; Cov(X,\\kappa) &amp;= 0\\\\<br>&nbsp;&nbsp;&nbsp; Cov(X+a, Y+b) &amp;= Cov(X,Y)\\\\<br>&nbsp;&nbsp;&nbsp; Cov(aX+bY, U) &amp;= aCov(X,U) + bCov(Y,U)<br>\\end{align*}",
+                        "\\begin{align*}<br>&nbsp;&nbsp;&nbsp; Cov(X,Y) &amp;= E[(X-\\mu_X)(Y-\\mu_Y)]\\\\<br>&nbsp;&nbsp;&nbsp; &amp;= E[XY] - E[X]E[Y]\\\\<br>&nbsp;&nbsp;&nbsp; Cov(X,Y) &amp;= 0 \\text{ iff X,Y independientes}\\\\<br>&nbsp;&nbsp;&nbsp; Cov(\\vec{X}) &amp;= \\begin{bmatrix}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cov(X_1,X_1) &amp; Cov(X_1,X_2) &amp; \\cdots &amp; Cov(X_1,X_n)\\\\<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cov(X_2,X_1) &amp; Cov(X_2,X_2) &amp; \\cdots &amp; Cov(X_2,X_n)\\\\<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\vdots &amp; \\vdots &amp; \\ddots &amp; \\vdots \\\\<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cov(X_n,X_1) &amp; Cov(X_n,X_2) &amp; \\cdots &amp; Cov(X_n,X_n)<br>&nbsp;&nbsp;&nbsp; \\end{bmatrix}\\\\<br>&nbsp;&nbsp;&nbsp; Cov(X,X) &amp;= Var(X)\\\\<br>&nbsp;&nbsp;&nbsp; Cov(X,Y) &amp;= Cov(Y,X)\\\\<br>&nbsp;&nbsp;&nbsp; Cov(aX,bY) &amp;= abCov(X,Y)\\\\<br>&nbsp;&nbsp;&nbsp; Cov(X,\\kappa) &amp;= 0\\\\<br>&nbsp;&nbsp;&nbsp; Cov(X+a, Y+b) &amp;= Cov(X,Y)\\\\<br>&nbsp;&nbsp;&nbsp; Cov(aX+bY, U) &amp;= aCov(X,U) + bCov(Y,U)<br>\\end{align*}",
                         ""
                     ],
                     "guid": "IdayTl9/>t",
@@ -2067,7 +2347,7 @@
                     "fields": [
                         "Convert the following code to one line",
                         "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">rho <span style=\"color: #666666\">=</span> initial\n<span style=\"color: #008000; font-weight: bold\">for</span> x <span style=\"color: #AA22FF; font-weight: bold\">in</span> my_iter:\n    rho <span style=\"color: #666666\">=</span> rho <span style=\"color: #666666\">+</span> x\n</pre></div>\n</td></tr></tbody></table></center>",
-                        "from functools import reduce<br>reduce(lambda x,y; x+y, my_iter, initial)"
+                        "from functools import reduce<br>reduce(lambda x,y: x+y, my_iter, initial)"
                     ],
                     "guid": "hN*Kk6ub!Y",
                     "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
@@ -2272,6 +2552,66 @@
                     "name": "Card 1",
                     "ord": 0,
                     "qfmt": "[latex]\n{{Problem}}\n[/latex]\n<br>\n<br>\n{{Hint}}\n<br>\n<br>\n[[typebox:Answer]]"
+                }
+            ],
+            "type": 0
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "988a4ff6-9d23-11ec-91bb-21a4fc219968",
+            "css": ".card {\n  font-family: arial;\n  font-size: 20px;\n  text-align: center;\n  color: black;\n  background-color: white;\n}\n",
+            "flds": [
+                {
+                    "font": "Liberation Sans",
+                    "name": "Front",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "name": "CodeFront",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "name": "Back",
+                    "ord": 2,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "Code in Front",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0,
+                        1
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tmpls": [
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Card 1",
+                    "ord": 0,
+                    "qfmt": "[latex]\n{{Front}}\n[/latex]\n\n{{CodeFront}}"
                 }
             ],
             "type": 0
