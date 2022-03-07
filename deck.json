@@ -428,17 +428,6 @@
                 {
                     "__type__": "Note",
                     "fields": [
-                        "Arbitrary precision arithmetic",
-                        "\\begin{itemize}<br>\\item BigInt BigFloat<br>\\item parse(x, y) : parse y (can be a string) to type x, specially usefull to parse very long numbers<br>\\item big\"12345678944...536135\"&nbsp; : parse string directly to Big type<br>\\item setrounding()<br>\\item setprecision()<br>\\end{itemize}",
-                        ""
-                    ],
-                    "guid": "dp$GJr8hGq",
-                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
-                    "tags": []
-                },
-                {
-                    "__type__": "Note",
-                    "fields": [
                         "Other numeric types",
                         "\\begin{itemize}<br>\\item Complex<br>\\item Rational<br>\\item Irrational<br>\\item Inf, -Inf : a number greater(less) than any other number<br>\\item Nan: a number different than any number,&nbsp; usefull for not defined expression like 0/0<br>\\end{itemize}",
                         ""
@@ -1077,7 +1066,7 @@
                 {
                     "__type__": "Note",
                     "fields": [
-                        "Assert wheter x is an Integer",
+                        "Assert whether x is an Integer",
                         "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">x<span style=\"color: #666666\">=9</span>\n</pre></div>\n</td></tr></tbody></table></center>",
                         "x isa Integer"
                     ],
@@ -1104,6 +1093,149 @@
                         "supertype(Int8)"
                     ],
                     "guid": "ccvFg+8{wP",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Calculate determinant of matrix M",
+                        ".",
+                        "det(M)"
+                    ],
+                    "guid": "gOZLbi9/+;",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Calculate trace of matrix M",
+                        ".",
+                        "tr(M)"
+                    ],
+                    "guid": "wG,KEu&!E}",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Calculate the inverse of matrix M",
+                        ".",
+                        "inv(M)"
+                    ],
+                    "guid": "N!mg!l5z;2",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Calculate eigenvals of M",
+                        ".",
+                        "eigenvals(M)"
+                    ],
+                    "guid": "kWW8AeK8{*",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Calculate eigenvectors of matrix M",
+                        ".",
+                        "eigenvecs(M)"
+                    ],
+                    "guid": "RcKDl?$L!z",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Create a Dict with keys from vector a and values from&nbsp; b",
+                        ".",
+                        "Dict(zip(a,b))"
+                    ],
+                    "guid": "Pt?M8k[:qA",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Add x to array",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">x<span style=\"color: #666666\">=9</span>\narray <span style=\"color: #666666\">=</span> [<span style=\"color: #666666\">1</span>,<span style=\"color: #666666\">2</span>,<span style=\"color: #666666\">3</span>,<span style=\"color: #666666\">4</span>,<span style=\"color: #666666\">5</span>,<span style=\"color: #666666\">6</span>,<span style=\"color: #666666\">7</span>,<span style=\"color: #666666\">8</span>,<span style=\"color: #666666\">9</span>]\n</pre></div>\n</td></tr></tbody></table></center><br>",
+                        "push!(array, x)"
+                    ],
+                    "guid": "I~(r*xoD2M",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Add values to array",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">values <span style=\"color: #666666\">=</span> [<span style=\"color: #666666\">4</span>,<span style=\"color: #666666\">5</span>]\narray <span style=\"color: #666666\">=</span> [<span style=\"color: #666666\">1</span>,<span style=\"color: #666666\">2</span>,<span style=\"color: #666666\">3</span>]\n</pre></div>\n</td></tr></tbody></table></center><br><br>",
+                        "append!(array, values)"
+                    ],
+                    "guid": "Q4QGW.Gh%g",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Create a matrix of zeros of 20x20",
+                        ".",
+                        "zeros(20,20)"
+                    ],
+                    "guid": "iwE[1>iZd:",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Create an iterable 1,3,5,...,19",
+                        ".",
+                        "1:2:20"
+                    ],
+                    "guid": "d^.xXF@BEt",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Get the dimensions of matrix M",
+                        ".",
+                        "M.size"
+                    ],
+                    "guid": "b,S]]f5M>q",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Create a vector comprehension with values 1:100, where x if even, else 0",
+                        ".",
+                        "[if x%2==0 x else 0 end for x in 1:100]"
+                    ],
+                    "guid": "kBQn64z$7}",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Create a matrix with values x+y where x in 0:0.1:1, y in 0:0.1:1",
+                        ".",
+                        "[x+y for x in 0:0.1:1, y in 0:0.1:1]"
+                    ],
+                    "guid": "ddKJi/t}ny",
                     "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
                     "tags": []
                 }
