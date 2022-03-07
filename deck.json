@@ -1238,6 +1238,83 @@
                     "guid": "ddKJi/t}ny",
                     "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
                     "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Plot<br>\\begin{itemize}<br>\\item f with label \"cuadratic\", color blue, linestyle dash and linewidth 3<br>\\item g with label \"cubic\", color red, linestyle solid and linewidth 3<br>\\end{itemize}<br>with all legends on bottom right side",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">x <span style=\"color: #666666\">=</span> <span style=\"color: #666666\">0:0.1:1</span>\nf <span style=\"color: #666666\">=</span> x <span style=\"color: #666666\">.^</span> <span style=\"color: #666666\">2</span>\ng <span style=\"color: #666666\">=</span> x <span style=\"color: #666666\">.^</span> <span style=\"color: #666666\">3</span>\n</pre></div>\n</td></tr></tbody></table></center>",
+                        "<br>plot(x, f, label=\"cuadratic\", color=\"blue\", linestyle=:dash, linewidth=3, legend=:bottomright)<br>plot!(x, g, label=\"cubic\", color=\"red\", linestyle=:solid, linewidth=3)"
+                    ],
+                    "guid": "u0:8U9cqK$",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Array vs Matrix vs Vector",
+                        "Array n-dim<br>Matrix 2-dim&nbsp;<br>Vector 1-dim",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">M <span style=\"color: #666666\">=</span> [<span style=\"color: #666666\">1</span> <span style=\"color: #666666\">2</span>\n<span style=\"color: #666666\">3</span> <span style=\"color: #666666\">4</span>]\nv <span style=\"color: #666666\">=</span> [<span style=\"color: #666666\">1</span>,<span style=\"color: #666666\">2</span>,<span style=\"color: #666666\">3</span>,<span style=\"color: #666666\">4</span>]\n</pre></div>\n</td></tr></tbody></table></center><br>"
+                    ],
+                    "guid": "j)F5DBhFl{",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "How are functions in Julia created such that arguments must be named?",
+                        "After semicolon (;)",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000; font-weight: bold\">function</span> f(x,y;a)\n\t<span style=\"color: #008000; font-weight: bold\">return</span> x <span style=\"color: #666666\">+</span> a<span style=\"color: #666666\">*</span>y\n<span style=\"color: #008000; font-weight: bold\">end</span>\n</pre></div>\n</td></tr></tbody></table></center>"
+                    ],
+                    "guid": "v$g&sZq&##",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Tuples vs NamedTuples",
+                        ".",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3\n4\n5</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">t <span style=\"color: #666666\">=</span> (<span style=\"color: #666666\">1</span>,<span style=\"color: #666666\">2</span>,<span style=\"color: #666666\">3</span>,<span style=\"color: #666666\">4</span>)\nnt <span style=\"color: #666666\">=</span> (a<span style=\"color: #666666\">=1</span>,b<span style=\"color: #666666\">=2</span>,c<span style=\"color: #666666\">=3</span>)\nnt<span style=\"color: #666666\">.</span>a\t<span style=\"color: #408080; font-style: italic\">#1</span>\nt[<span style=\"color: #666666\">1</span>]\t<span style=\"color: #408080; font-style: italic\">#1</span>\nnt[<span style=\"color: #666666\">1</span>]\t<span style=\"color: #408080; font-style: italic\">#1</span>\n</pre></div>\n</td></tr></tbody></table></center><br>"
+                    ],
+                    "guid": "LE-vDR?}A6",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "VarArgs",
+                        ".",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000; font-weight: bold\">function</span> suma(x,y<span style=\"color: #666666\">...</span>)\n\t<span style=\"color: #008000; font-weight: bold\">return</span> x<span style=\"color: #666666\">+</span>sum(y)\n<span style=\"color: #008000; font-weight: bold\">end</span>\n</pre></div>\n</td></tr></tbody></table></center>"
+                    ],
+                    "guid": "oE!#.i*,*2",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Unpack Iterable to function",
+                        ".",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">f(x,y<span style=\"color: #666666\">...</span>)\n</pre></div>\n</td></tr></tbody></table></center>"
+                    ],
+                    "guid": "uL*nm,LH0&",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "How to implement a constructor? (Keywords)",
+                        "new(&lt;&lt;params&gt;&gt;)",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3\n4\n5\n6\n7</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">struct Point\n\tx<span style=\"color: #666666\">::</span><span style=\"color: #B00040\">Float64</span>\n\ty<span style=\"color: #666666\">::</span><span style=\"color: #B00040\">Float64</span>\n\t<span style=\"color: #008000; font-weight: bold\">function</span> Point(t<span style=\"color: #666666\">=1</span>)\n\t\tnew(t<span style=\"color: #666666\">^2</span>,t)\n\t<span style=\"color: #008000; font-weight: bold\">end</span>\n<span style=\"color: #008000; font-weight: bold\">end</span>\n</pre></div>\n</td></tr></tbody></table></center><br>"
+                    ],
+                    "guid": "iXg=BhXB}u",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
                 }
             ]
         },
