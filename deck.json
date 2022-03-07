@@ -846,7 +846,7 @@
                 {
                     "__type__": "Note",
                     "fields": [
-                        "Create a BigInt equals to 123456789_123456789_123456789_123456789",
+                        "Create a BigInt equals to 123456789\\_123456789\\_123456789\\_123456789",
                         "use big",
                         "big\"123456789123456789123456789123456789\""
                     ],
@@ -857,7 +857,7 @@
                 {
                     "__type__": "Note",
                     "fields": [
-                        "Create a BigFloat equals 0.123456789_123456789_123456789_123456789",
+                        "Create a BigFloat equals 0.123456789\\_123456789\\_123456789\\_123456789",
                         "use big",
                         "big\"0.123456789_123456789_123456789_123456789\""
                     ],
@@ -892,7 +892,7 @@
                     "fields": [
                         "Print \"1\" if $x=9$ is of type Integer",
                         ".",
-                        "if x::Integer == x<br>&nbsp; &nbsp; print(1)<br>end"
+                        "if x isa Integer<br>&nbsp; &nbsp; print(1)<br>end"
                     ],
                     "guid": "i!{>qphbOw",
                     "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
@@ -925,7 +925,7 @@
                     "fields": [
                         "Create a primitive type Int256 of 256 bits subtype of Integer",
                         ".",
-                        "primitive type Int256 &lt;: Integer end"
+                        "primitive type Int256 256 &lt;: Integer end"
                     ],
                     "guid": "c1HEsxdRjH",
                     "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
@@ -1022,9 +1022,9 @@
                 {
                     "__type__": "Note",
                     "fields": [
-                        "Create a function called \"norm\" that takes p as a Point of type Real",
+                        "Create a function called \"norm\" that takes p as a Point of type Real and returns 0",
                         ".",
-                        "function norm(p::Point{T} where T&lt;:Real)<br>&nbsp; &nbsp; return 0<br>end"
+                        "function norm(p::Point{&lt;:Real})<br>&nbsp; &nbsp; return 0<br>end"
                     ],
                     "guid": "KTpQov{V`G",
                     "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
@@ -1033,7 +1033,7 @@
                 {
                     "__type__": "Note",
                     "fields": [
-                        "What will be the output of following code",
+                        "What will be the output of following code?",
                         "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3\n4\n5\n6\n7\n8</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">struct Point{T}\n\tx<span style=\"color: #666666\">::</span>T\n\ty<span style=\"color: #666666\">::</span>T\n<span style=\"color: #008000; font-weight: bold\">end</span>\n\njulia<span style=\"color: #666666\">&gt;</span> Point{<span style=\"color: #B00040\">AbstractString</span>} <span style=\"color: #666666\">&lt;:</span> Point\njulia<span style=\"color: #666666\">&gt;</span> Point{<span style=\"color: #B00040\">Float64</span>} <span style=\"color: #666666\">&lt;:</span> Point{<span style=\"color: #B00040\">Int64</span>}\njulia<span style=\"color: #666666\">&gt;</span> Point{<span style=\"color: #B00040\">Int8</span>} <span style=\"color: #666666\">&lt;:</span> Point{<span style=\"color: #666666\">&lt;:</span><span style=\"color: #B00040\">Integer</span>}\n</pre></div>\n</td></tr></tbody></table></center><br>",
                         "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000; font-weight: bold\">true</span>\n<span style=\"color: #008000; font-weight: bold\">false</span>\n<span style=\"color: #008000; font-weight: bold\">true</span>\n</pre></div>\n</td></tr></tbody></table></center>"
                     ],
@@ -1066,7 +1066,7 @@
                 {
                     "__type__": "Note",
                     "fields": [
-                        "Create an alias for Point{Int8} called PointInt8",
+                        "Create an alias for Point\\{Int8\\} called PointInt8",
                         "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3\n4</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">struct Point{T}\n\tx<span style=\"color: #666666\">::</span>T\n\ty<span style=\"color: #666666\">::</span>T\n<span style=\"color: #008000; font-weight: bold\">end</span>\n</pre></div>\n</td></tr></tbody></table></center><br>",
                         "const PointInt8 = Point{Int8}"
                     ],
@@ -1104,17 +1104,6 @@
                         "supertype(Int8)"
                     ],
                     "guid": "ccvFg+8{wP",
-                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
-                    "tags": []
-                },
-                {
-                    "__type__": "Note",
-                    "fields": [
-                        "Pretty print like $r\\cdot exp(\\theta\\cdot im)$",
-                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3\n4</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">struct Polar{T<span style=\"color: #666666\">&lt;:</span><span style=\"color: #B00040\">Real</span>} <span style=\"color: #666666\">&lt;:</span> <span style=\"color: #B00040\">Number</span>\n\tr<span style=\"color: #666666\">::</span>T\n\ttheta<span style=\"color: #666666\">::</span>T\n<span style=\"color: #008000; font-weight: bold\">end</span>\n</pre></div>\n</td></tr></tbody></table></center>",
-                        ""
-                    ],
-                    "guid": "wOO`vjzTB,",
                     "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
                     "tags": []
                 }
