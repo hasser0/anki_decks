@@ -399,6 +399,39 @@
                     "guid": "Q!!W$1UMSo",
                     "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
                     "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "How is calculated area of a triangle?",
+                        "with vector product<br><br>$$<br>\\mathbf{A}(\\Delta) = \\frac{1}{2}| v\\times u |&nbsp;<br>$$",
+                        ""
+                    ],
+                    "guid": "Qw8wUYpo!-",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "How is calculated the area of a triangle with an external point?",
+                        "Let $p$ be a external point, then<br><br>$$<br>\\mathbf{A}(\\Delta abc ) = \\mathbf{A}(\\Delta pab) + \\mathbf{A}(\\Delta pbc) + \\mathbf{A}(\\Delta pca)<br>$$",
+                        ""
+                    ],
+                    "guid": "xgzK[BqT:w",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "How is calculated the area of a polygon with an external point?",
+                        "<br>Let $x$ be a external point and $P$ a polygon with vertex $\\{v_i\\}_{i=0}^{n-1}$<br><br>$$<br>\\mathbf{A}(P) = \\sum_{i=0}^{n-1} \\mathbf{A}(\\Delta xv_iv_{i+1})<br>$$",
+                        ""
+                    ],
+                    "guid": "j$F~&aC@DE",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
                 }
             ]
         },
@@ -2609,7 +2642,7 @@
                     0
                 ],
                 "order": 0,
-                "perDay": 20
+                "perDay": 40
             },
             "newGatherPriority": 0,
             "newMix": 0,
