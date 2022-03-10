@@ -2382,7 +2382,17 @@
             "dyn": 0,
             "extendNew": 0,
             "extendRev": 0,
-            "media_files": [],
+            "media_files": [
+                "86eccc17a35541e0afc0913298723704-ao-1-A.svg",
+                "86eccc17a35541e0afc0913298723704-ao-1-Q.svg",
+                "86eccc17a35541e0afc0913298723704-ao-2-A.svg",
+                "86eccc17a35541e0afc0913298723704-ao-2-Q.svg",
+                "86eccc17a35541e0afc0913298723704-ao-3-A.svg",
+                "86eccc17a35541e0afc0913298723704-ao-3-Q.svg",
+                "86eccc17a35541e0afc0913298723704-ao-O.svg",
+                "paste-c2d2b62a67a26e613a5c6850aeeb2b76d68e8a06.jpg",
+                "tmp6800ld7j.png"
+            ],
             "name": "pronosticos",
             "notes": [
                 {
@@ -2503,6 +2513,250 @@
                         ""
                     ],
                     "guid": "xPf5L*s*}c",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Operador demora",
+                        "L : lag<br><br>$$<br>Ly_t = y_{t-1}<br>$$",
+                        ""
+                    ],
+                    "guid": "fES6%W8u{f",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Operador rezago distribuido",
+                        "$$<br>B(L) = \\sum_{i=0}^n b_i L^i<br>$$",
+                        ""
+                    ],
+                    "guid": "ys;^+e}Zjt",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Función de transferencia",
+                        "Es el rezago distribuido (con $b_i$'s específicos) que transforma el ruido blanco a la serie de tiempo de interés.<br><br>$$<br>\\Psi(B) = \\sum_{i=0}^\\infty \\psi_i L^i<br>$$",
+                        ""
+                    ],
+                    "guid": "F2E2,gA!#K",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Operador diferencia",
+                        "$$<br>\\nabla y_t = (1-L)y_t = y_t - y_{t-1}<br>$$",
+                        ""
+                    ],
+                    "guid": "qf:Q[|p*c.",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Operador demora racional distribuida",
+                        "Ocupado para modelos ARIMA pues, en lugar de tener infinitos parámetros tendremos solo $p+q$ parámetros<br><br>$$<br>\\frac{\\Theta(L) }{\\Phi(L)} = \\dfrac{\\sum_{i=0}^p \\theta_i L^i}{\\sum_{i=0}^q \\phi_i L^i}<br>$$",
+                        ""
+                    ],
+                    "guid": "HfIY|zgP!Q",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Teorema de representación de Wold",
+                        "Sea $\\{y_t\\}_{i=0}^\\infty$ un proceso débilmente estacionario con $E[y_t] = 0$.<br><br>Sea $\\varepsilon_t \\sim WN(0, \\sigma^2)$<br><br>Entonces<br><br>$$<br>y_t = B(L)\\varepsilon_t = \\sum_{i=0}^\\infty b_i \\varepsilon_{t-i}<br>$$",
+                        ""
+                    ],
+                    "guid": "cz{ly]tc@0",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Proceso lineal general",
+                        "Es el modelo de representación propuesto por Wold de parámetros infinitos",
+                        ""
+                    ],
+                    "guid": "E~JcOf<bl)",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Filtro lineal",
+                        "Es el proceso lineal general añadiendo la media $\\mu$",
+                        ""
+                    ],
+                    "guid": "v5o8%cK*/&",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Componentes de los modelos ARIMA",
+                        "\\begin{itemize}<br>\\item Tendencia<br>\\item Variación residual<br>\\item Variación cíclica<br>\\item Variación estacional<br>\\end{itemize}",
+                        ""
+                    ],
+                    "guid": "pR)t&-E)TZ",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Modelo ARIMA aditivo",
+                        "$$<br>y_t = T_t +C_t +S_t + \\varepsilon_t&nbsp;<br>$$<br><br>T:Tendency<br><br>C:Ciclyc<br><br>S:Season",
+                        ""
+                    ],
+                    "guid": "PB0:fL4C/A",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Modelo ARIMA multiplicativo",
+                        "$$<br>y_t = T_t \\cdot C_t \\cdot S_t \\cdot e^{\\varepsilon_t}<br>$$<br><br>T:Tendency<br><br>C:Ciclyc<br><br>S:Season",
+                        ""
+                    ],
+                    "guid": "lxsahb*CS|",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Correlograma",
+                        "Si graficamos la función de covarianza $\\gamma_\\tau = Cov(X_t, X_{t+\\tau})$, de un proceso estacionario (en covarianza) contra t obtenemos el correlograma<br><img src=\"paste-c2d2b62a67a26e613a5c6850aeeb2b76d68e8a06.jpg\">",
+                        ""
+                    ],
+                    "guid": "Gj?C(+bfPR",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "86eccc17a35541e0afc0913298723704-ao-1",
+                        "",
+                        "<img src=\"tmp6800ld7j.png\" />",
+                        "<img src=\"86eccc17a35541e0afc0913298723704-ao-1-Q.svg\" />",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "<img src=\"86eccc17a35541e0afc0913298723704-ao-1-A.svg\" />",
+                        "<img src=\"86eccc17a35541e0afc0913298723704-ao-O.svg\" />"
+                    ],
+                    "guid": "O+vVydc>iZ",
+                    "note_model_uuid": "e90618a6-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "86eccc17a35541e0afc0913298723704-ao-2",
+                        "",
+                        "<img src=\"tmp6800ld7j.png\" />",
+                        "<img src=\"86eccc17a35541e0afc0913298723704-ao-2-Q.svg\" />",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "<img src=\"86eccc17a35541e0afc0913298723704-ao-2-A.svg\" />",
+                        "<img src=\"86eccc17a35541e0afc0913298723704-ao-O.svg\" />"
+                    ],
+                    "guid": "m~up&[B^os",
+                    "note_model_uuid": "e90618a6-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "86eccc17a35541e0afc0913298723704-ao-3",
+                        "",
+                        "<img src=\"tmp6800ld7j.png\" />",
+                        "<img src=\"86eccc17a35541e0afc0913298723704-ao-3-Q.svg\" />",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "<img src=\"86eccc17a35541e0afc0913298723704-ao-3-A.svg\" />",
+                        "<img src=\"86eccc17a35541e0afc0913298723704-ao-O.svg\" />"
+                    ],
+                    "guid": "d:0,]8O#g5",
+                    "note_model_uuid": "e90618a6-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Partial Autocorrelation Function (PACF)",
+                        "Suppose the model&nbsp;<br>$$<br>Z_t = \\sum_{i=1}^k \\phi_{ki} Z_{t+k-i} + \\varepsilon_{t+k}<br>$$<br>such that $E[\\varepsilon_t]=0$ and $\\varepsilon_t$ is uncorrelated to $Z_{t+k-j}$<br><br>Multiplying by $Z_{t+k-j}$ and taking $E[\\cdot ]$ for $j=1,2,...,k$ we get<br><br>\\begin{equation*}<br>\\begin{bmatrix}<br>\\rho_1 \\\\ \\rho_2 \\\\ \\vdots \\\\ \\rho_k<br>\\end{bmatrix}<br>=&nbsp;<br>\\begin{bmatrix}<br>\\rho_0 &amp; \\rho_1 &amp; \\dots &amp; \\rho_{k-1}\\\\<br>\\rho_1 &amp; \\rho_0 &amp; \\dots &amp; \\rho_{k-2}\\\\<br>\\vdots &amp; \\vdots &amp; \\ddots &amp; \\vdots \\\\<br>\\rho_{k-1} &amp; \\rho_{k-2} &amp; \\dots &amp; \\rho_0\\\\<br>\\end{bmatrix}<br>\\begin{bmatrix}<br>\\phi_{k1} \\\\ \\phi_{k2} \\\\ \\vdots \\\\ \\phi_{kk}<br>\\end{bmatrix}<br>\\end{equation*}<br>$\\phi_{kk} = Cov(Z_{t+k},Z_{t}|Z_{t+k-1},Z_{t+k-2},\\dots,Z_{t+1})$ is the partial autocorrelation function of&nbsp; $Z_t$ with&nbsp; $Z_{t+k}$",
+                        ""
+                    ],
+                    "guid": "Pi_9++$w4~",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Correlograma parcial",
+                        "Si graficamos la función de autocorrelación parcial contra el lag $k$ obtenemos el correlograma parcial",
+                        ""
+                    ],
+                    "guid": "du{M/:!VuG",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Interpretación del correlograma parcial",
+                        "El correlograma parcial nos ayuda a saber el orden del modelo que vamos a utilizar pues elimina la multicolinealidad de nuestras variables.",
+                        ""
+                    ],
+                    "guid": "oIX;sQ6,Qx",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Periodograma",
+                        "Sea nuestra serie de tiempo $(y_1,y_2,\\dots, y_T)$<br><br>Del análisis espectral tenemos que un proceso estacionario admite una descomposición de su varianza en armónicos<br>$$<br>X_t = \\sum_{i=1}^n a_icosw_it + b_isenw_it<br>$$<br>Esta es la versión discreta del análsis de Fourier, de donde podemos obtener los valores de $a_i$ y $b_i$ con ciertas fórmulas. Cada par de valores $(a_i,b_i)$ se asocia con una frecuencia $\\lambda_i = \\frac{2\\pi i}{T}$.&nbsp; Si nosotros graficamos los valores de $\\lambda_i$ contra $a_i^2+b_i^2$ obtenemos el periodograma.<br><br>Esta gráfica corresponde a transformar la serie del dominio del tiempo al de frecuencias",
+                        ""
+                    ],
+                    "guid": "PjzXzCY|=y",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Periodograma integrado",
+                        "Del periodograma podemos obtener<br>$$<br>\\Lambda_k = \\dfrac{\\sum_{i=1}^k (a_i^2+b_i^2)}{\\sum_{i=1}^n (a_i^2+b_i^2)}<br>$$<br>al graficar $\\Lambda_k$ contra su respectiva frecuencia $\\lambda_k$ obtendremos el periodograma integrado<br><br>Este nos ayuda a identificar frecuencias dominantes con escalones pronunciados, los cuales son signo de no estacionariedad.",
+                        ""
+                    ],
+                    "guid": "jz$G^_Lzh,",
                     "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
                     "tags": []
                 }
