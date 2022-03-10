@@ -382,7 +382,7 @@
                     "__type__": "Note",
                     "fields": [
                         "Meister's two ears theorem",
-                        "Every polygon of $n\\ge 4$ has at least two nonoverlapping ears.<br><br>A leaft node in the triangulation dual corresponds to an ear. A tree must have at least two leaves.",
+                        "Every polygon of $n\\ge 4$ has at least two nonoverlapping ears.<br><br>A leaft node in the triangulation dual corresponds to an ear. A tree must have at least two leaves.<br><br>Also the upper left vertex and lower right vertex are ears.",
                         ""
                     ],
                     "guid": "m(VH_!TOu-",
@@ -444,7 +444,9 @@
             "dyn": 0,
             "extendNew": 0,
             "extendRev": 0,
-            "media_files": [],
+            "media_files": [
+                "paste-15d7adf6ad2151a300805816195a625e54bbc4f4.jpg"
+            ],
             "name": "julia",
             "notes": [
                 {
@@ -1088,9 +1090,9 @@
                 {
                     "__type__": "Note",
                     "fields": [
-                        "Create an alias for Point\\{Int8\\} called PointInt8",
+                        "Create an alias for Point\\{Int8\\} called PInt8",
                         "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3\n4</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">struct Point{T}\n\tx<span style=\"color: #666666\">::</span>T\n\ty<span style=\"color: #666666\">::</span>T\n<span style=\"color: #008000; font-weight: bold\">end</span>\n</pre></div>\n</td></tr></tbody></table></center><br>",
-                        "const PointInt8 = Point{Int8}"
+                        "const PInt8 = Point{Int8}"
                     ],
                     "guid": "J[H4l]GAX!",
                     "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
@@ -1134,7 +1136,7 @@
                     "fields": [
                         "Calculate determinant of matrix M",
                         ".",
-                        "det(M)"
+                        "using LinearAlgebra<br>det(M)"
                     ],
                     "guid": "gOZLbi9/+;",
                     "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
@@ -1275,9 +1277,9 @@
                 {
                     "__type__": "Note",
                     "fields": [
-                        "Plot<br>\\begin{itemize}<br>\\item f with label \"cuadratic\", color blue, linestyle dash and linewidth 3<br>\\item g with label \"cubic\", color red, linestyle solid and linewidth 3<br>\\end{itemize}<br>with all legends on bottom right side",
-                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">x <span style=\"color: #666666\">=</span> <span style=\"color: #666666\">0:0.1:1</span>\nf <span style=\"color: #666666\">=</span> x <span style=\"color: #666666\">.^</span> <span style=\"color: #666666\">2</span>\ng <span style=\"color: #666666\">=</span> x <span style=\"color: #666666\">.^</span> <span style=\"color: #666666\">3</span>\n</pre></div>\n</td></tr></tbody></table></center>",
-                        "<br>plot(x, f, label=\"cuadratic\", color=\"blue\", linestyle=:dash, linewidth=3, legend=:bottomright)<br>plot!(x, g, label=\"cubic\", color=\"red\", linestyle=:solid, linewidth=3)"
+                        "Plot the following diagram",
+                        "<center><img src=\"paste-15d7adf6ad2151a300805816195a625e54bbc4f4.jpg\"><br><br><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">x <span style=\"color: #666666\">=</span> <span style=\"color: #666666\">0:0.1:1</span>\nf <span style=\"color: #666666\">=</span> x <span style=\"color: #666666\">.^</span> <span style=\"color: #666666\">2</span>\ng <span style=\"color: #666666\">=</span> x <span style=\"color: #666666\">.^</span> <span style=\"color: #666666\">3</span>\n</pre></div>\n</td></tr></tbody></table></center>",
+                        "plot(x, f, label=\"cuadratic\", color=\"blue\", linestyle=:dash, linewidth=3, legend=:bottomright)<br>plot!(x, g, label=\"cubic\", color=\"red\", linestyle=:solid, linewidth=3)"
                     ],
                     "guid": "u0:8U9cqK$",
                     "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
@@ -1320,7 +1322,7 @@
                     "__type__": "Note",
                     "fields": [
                         "VarArgs",
-                        ".",
+                        "Is&nbsp; function that accepts multiple values in a parameter as a vector",
                         "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000; font-weight: bold\">function</span> suma(x,y<span style=\"color: #666666\">...</span>)\n\t<span style=\"color: #008000; font-weight: bold\">return</span> x<span style=\"color: #666666\">+</span>sum(y)\n<span style=\"color: #008000; font-weight: bold\">end</span>\n</pre></div>\n</td></tr></tbody></table></center>"
                     ],
                     "guid": "oE!#.i*,*2",
@@ -1469,7 +1471,7 @@
                     "__type__": "Note",
                     "fields": [
                         "Función",
-                        "Dado dos conjuntos $A, B$ una función es una relación $R$ donde<br>\\begin{itemize}<br>\\item $\\forall x\\in A \\exists y: (x, y) \\in R$<br>\\item $(x, z) \\in R, (x, y)\\in R&nbsp; \\Leftarrow x=z$<br>\\end{itemize}",
+                        "Dado dos conjuntos $A, B$ una función es una relación $R$ donde<br>\\begin{itemize}<br>\\item $\\forall x\\in A,&nbsp; \\exists y: (x, y) \\in R$<br>\\item $(x, z) \\in R, (x, y)\\in R&nbsp; \\Rightarrow y=z$<br>\\end{itemize}",
                         ""
                     ],
                     "guid": "D1*wmpFcqQ",
