@@ -1350,28 +1350,6 @@
                     "guid": "iXg=BhXB}u",
                     "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
                     "tags": []
-                },
-                {
-                    "__type__": "Note",
-                    "fields": [
-                        "Arbitrary precision arithmetic",
-                        "\\begin{itemize}<br>\\item BigInt BigFloat<br>\\item parse(x, y) : parse y (can be a string) to type x, specially usefull to parse very long numbers<br>\\item big\"12345678944...536135\"&nbsp; : parse string directly to Big type<br>\\item setrounding()<br>\\item setprecision()<br>\\end{itemize}",
-                        ""
-                    ],
-                    "guid": "dp$GJr8hGq",
-                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
-                    "tags": []
-                },
-                {
-                    "__type__": "Note",
-                    "fields": [
-                        "Pretty print like $r\\cdot exp(\\theta\\cdot im)$",
-                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3\n4</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">struct Polar{T<span style=\"color: #666666\">&lt;:</span><span style=\"color: #B00040\">Real</span>} <span style=\"color: #666666\">&lt;:</span> <span style=\"color: #B00040\">Number</span>\n\tr<span style=\"color: #666666\">::</span>T\n\ttheta<span style=\"color: #666666\">::</span>T\n<span style=\"color: #008000; font-weight: bold\">end</span>\n</pre></div>\n</td></tr></tbody></table></center>",
-                        ""
-                    ],
-                    "guid": "wOO`vjzTB,",
-                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
-                    "tags": []
                 }
             ]
         },
