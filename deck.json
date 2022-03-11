@@ -2759,6 +2759,17 @@
                     "guid": "jz$G^_Lzh,",
                     "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
                     "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Test de Grubbs",
+                        "Es un test utilizado para identificar outliers que utiliza el estadístico<br>$$<br>G_{calc} = \\frac{|x_{obs}- \\bar{x}|}{s}<br>$$<br>y lo compara con valores de tablas. Si $G_{calc} \\ge G_\\alpha$ rechazamos la hipótesis nula de que el valor pertenece a la muestra.",
+                        ""
+                    ],
+                    "guid": "d&/2cX>5F5",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
                 }
             ]
         },
