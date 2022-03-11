@@ -382,7 +382,7 @@
                     "__type__": "Note",
                     "fields": [
                         "Meister's two ears theorem",
-                        "Every polygon of $n\\ge 4$ has at least two nonoverlapping ears.<br><br>A leaft node in the triangulation dual corresponds to an ear. A tree must have at least two leaves.<br><br>Also the upper left vertex and lower right vertex are ears.",
+                        "Every polygon of $n\\ge 4$ has at least two nonoverlapping ears.<br><br>A leaft node in the triangulation dual corresponds to an ear. A tree must have at least two leaves.",
                         ""
                     ],
                     "guid": "m(VH_!TOu-",
@@ -870,7 +870,7 @@
                 {
                     "__type__": "Note",
                     "fields": [
-                        "Create a BigInt equals to 123456789\\_123456789\\_123456789\\_123456789",
+                        "Create a BigInt equals to 123456789_123456789_123456789_123456789",
                         "use big",
                         "big\"123456789123456789123456789123456789\""
                     ],
@@ -881,7 +881,7 @@
                 {
                     "__type__": "Note",
                     "fields": [
-                        "Create a BigFloat equals 0.123456789\\_123456789\\_123456789\\_123456789",
+                        "Create a BigFloat equals 0.123456789_123456789_123456789_123456789",
                         "use big",
                         "big\"0.123456789_123456789_123456789_123456789\""
                     ],
@@ -916,7 +916,7 @@
                     "fields": [
                         "Print \"1\" if $x=9$ is of type Integer",
                         ".",
-                        "if x isa Integer<br>&nbsp; &nbsp; print(1)<br>end"
+                        "if x::Integer == x<br>&nbsp; &nbsp; print(1)<br>end"
                     ],
                     "guid": "i!{>qphbOw",
                     "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
@@ -949,7 +949,7 @@
                     "fields": [
                         "Create a primitive type Int256 of 256 bits subtype of Integer",
                         ".",
-                        "primitive type Int256 256 &lt;: Integer end"
+                        "primitive type Int256 &lt;: Integer end"
                     ],
                     "guid": "c1HEsxdRjH",
                     "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
@@ -1046,9 +1046,9 @@
                 {
                     "__type__": "Note",
                     "fields": [
-                        "Create a function called \"norm\" that takes p as a Point of type Real and returns 0",
+                        "Create a function called \"norm\" that takes p as a Point of type Real",
                         ".",
-                        "function norm(p::Point{&lt;:Real})<br>&nbsp; &nbsp; return 0<br>end"
+                        "function norm(p::Point{T} where T&lt;:Real)<br>&nbsp; &nbsp; return 0<br>end"
                     ],
                     "guid": "KTpQov{V`G",
                     "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
@@ -1057,7 +1057,7 @@
                 {
                     "__type__": "Note",
                     "fields": [
-                        "What will be the output of following code?",
+                        "What will be the output of following code",
                         "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3\n4\n5\n6\n7\n8</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">struct Point{T}\n\tx<span style=\"color: #666666\">::</span>T\n\ty<span style=\"color: #666666\">::</span>T\n<span style=\"color: #008000; font-weight: bold\">end</span>\n\njulia<span style=\"color: #666666\">&gt;</span> Point{<span style=\"color: #B00040\">AbstractString</span>} <span style=\"color: #666666\">&lt;:</span> Point\njulia<span style=\"color: #666666\">&gt;</span> Point{<span style=\"color: #B00040\">Float64</span>} <span style=\"color: #666666\">&lt;:</span> Point{<span style=\"color: #B00040\">Int64</span>}\njulia<span style=\"color: #666666\">&gt;</span> Point{<span style=\"color: #B00040\">Int8</span>} <span style=\"color: #666666\">&lt;:</span> Point{<span style=\"color: #666666\">&lt;:</span><span style=\"color: #B00040\">Integer</span>}\n</pre></div>\n</td></tr></tbody></table></center><br>",
                         "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000; font-weight: bold\">true</span>\n<span style=\"color: #008000; font-weight: bold\">false</span>\n<span style=\"color: #008000; font-weight: bold\">true</span>\n</pre></div>\n</td></tr></tbody></table></center>"
                     ],
@@ -1090,9 +1090,9 @@
                 {
                     "__type__": "Note",
                     "fields": [
-                        "Create an alias for Point\\{Int8\\} called PInt8",
+                        "Create an alias for Point{Int8} called PointInt8",
                         "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3\n4</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">struct Point{T}\n\tx<span style=\"color: #666666\">::</span>T\n\ty<span style=\"color: #666666\">::</span>T\n<span style=\"color: #008000; font-weight: bold\">end</span>\n</pre></div>\n</td></tr></tbody></table></center><br>",
-                        "const PInt8 = Point{Int8}"
+                        "const PointInt8 = Point{Int8}"
                     ],
                     "guid": "J[H4l]GAX!",
                     "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
@@ -1101,7 +1101,7 @@
                 {
                     "__type__": "Note",
                     "fields": [
-                        "Assert whether x is an Integer",
+                        "Assert wheter x is an Integer",
                         "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">x<span style=\"color: #666666\">=9</span>\n</pre></div>\n</td></tr></tbody></table></center>",
                         "x isa Integer"
                     ],
@@ -1350,6 +1350,28 @@
                     "guid": "iXg=BhXB}u",
                     "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
                     "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Arbitrary precision arithmetic",
+                        "\\begin{itemize}<br>\\item BigInt BigFloat<br>\\item parse(x, y) : parse y (can be a string) to type x, specially usefull to parse very long numbers<br>\\item big\"12345678944...536135\"&nbsp; : parse string directly to Big type<br>\\item setrounding()<br>\\item setprecision()<br>\\end{itemize}",
+                        ""
+                    ],
+                    "guid": "dp$GJr8hGq",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Pretty print like $r\\cdot exp(\\theta\\cdot im)$",
+                        "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3\n4</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">struct Polar{T<span style=\"color: #666666\">&lt;:</span><span style=\"color: #B00040\">Real</span>} <span style=\"color: #666666\">&lt;:</span> <span style=\"color: #B00040\">Number</span>\n\tr<span style=\"color: #666666\">::</span>T\n\ttheta<span style=\"color: #666666\">::</span>T\n<span style=\"color: #008000; font-weight: bold\">end</span>\n</pre></div>\n</td></tr></tbody></table></center>",
+                        ""
+                    ],
+                    "guid": "wOO`vjzTB,",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
                 }
             ]
         },
@@ -1471,7 +1493,7 @@
                     "__type__": "Note",
                     "fields": [
                         "Función",
-                        "Dado dos conjuntos $A, B$ una función es una relación $R$ donde<br>\\begin{itemize}<br>\\item $\\forall x\\in A,&nbsp; \\exists y: (x, y) \\in R$<br>\\item $(x, z) \\in R, (x, y)\\in R&nbsp; \\Rightarrow y=z$<br>\\end{itemize}",
+                        "Dado dos conjuntos $A, B$ una función es una relación $R$ donde<br>\\begin{itemize}<br>\\item $\\forall x\\in A \\exists y: (x, y) \\in R$<br>\\item $(x, z) \\in R, (x, y)\\in R&nbsp; \\Leftarrow x=z$<br>\\end{itemize}",
                         ""
                     ],
                     "guid": "D1*wmpFcqQ",
