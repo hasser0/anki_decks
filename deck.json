@@ -510,17 +510,6 @@
                 {
                     "__type__": "Note",
                     "fields": [
-                        "Arbitrary precision arithmetic",
-                        "\\begin{itemize}<br>\\item BigInt BigFloat<br>\\item parse(x, y) : parse y (can be a string) to type x, specially usefull to parse very long numbers<br>\\item big\"12345678944...536135\"&nbsp; : parse string directly to Big type<br>\\item setrounding()<br>\\item setprecision()<br>\\end{itemize}",
-                        ""
-                    ],
-                    "guid": "dp$GJr8hGq",
-                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
-                    "tags": []
-                },
-                {
-                    "__type__": "Note",
-                    "fields": [
                         "Other numeric types",
                         "\\begin{itemize}<br>\\item Complex<br>\\item Rational<br>\\item Irrational<br>\\item Inf, -Inf : a number greater(less) than any other number<br>\\item Nan: a number different than any number,&nbsp; usefull for not defined expression like 0/0<br>\\end{itemize}",
                         ""
