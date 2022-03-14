@@ -224,6 +224,94 @@
                     "guid": "u0<QlyYoj&",
                     "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
                     "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Reducción de orden",
+                        "Dada la ecuación diferencial<br>\\begin{equation}<br>y'' + py' + qy = 0<br>\\end{equation}<br>Si conocemos una solución $y_1$ de la ecuación anterior, podemos realizar una reducción de orden suponiendo una solución nueva $y=y_1 u$. Al diferenciar obtenemos<br>\\begin{align*}<br>y' &amp;= y_1' u + y_1 u' \\\\<br>y'' &amp;= y_1'' u + 2y_1' u' + y_1 u''&nbsp;<br>\\end{align*}<br>Al sustituir en (1) obtendremos<br>\\begin{align*}<br>y_1'' u + 2y_1' u' + y_1 u'' + p \\left[&nbsp; y_1' u + y_1 u'&nbsp;\\right] + q&nbsp;\\left[&nbsp; y_1 u&nbsp;\\right] &amp;= 0\\\\<br>u (y_1'' + py_1' + qy_1) + y_1 u'' + u'(2y_1' + py_1) &amp;= 0<br>\\end{align*}<br>La primera parte es 0, mientras que el resto lo podemos dividir por $y_1$ para obtener una ecuación diferencial lineal<br>\\begin{align*}<br>y_1 u'' + u'(2y_1' + py_1) &amp;= 0\\\\<br>u'' + u' (p + 2\\frac{y_1'}{y_1}) &amp;= 0<br>\\end{align*}",
+                        ""
+                    ],
+                    "guid": "dx0jvO=z9w",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Ecuaciones homogéneas con coeficientes constantes de segundo orden",
+                        "Suponemos una solución del tipo $y(x) = e^{rx}$ con r constante para la ecuación<br>$$<br>a y'' + b y' + cy = 0<br>$$<br>Tenemos que<br>\\begin{align*}<br>y' &amp;= re^{rx}\\\\<br>y'' &amp;= r^2e^{rx}<br>\\end{align*}<br>Al sustituir obtenemos<br>\\begin{align*}<br>a&nbsp;&nbsp;r^2e^{rx} + b&nbsp;re^{rx} + c e^{rx} &amp;= 0\\\\<br>e^{rx} (ar^2 +br +c)&amp;= 0<br>\\end{align*}<br>En vista de que $e^{rx}$ nunca se anula, tenemos que la soluciones a la ecuación diferencial son aquellas de la forma $e^{rx}$ con $r$ solución de la ecuación $ar^2 +br +c=0$<br>Tendremos tres tipos de soluciones<br>\\begin{itemize}<br>\\item Complejas conjugadas<br>\\item Reales iguales<br>\\item Reales diferentes\\end{itemize}",
+                        ""
+                    ],
+                    "guid": "nk1r]w@bD)",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Raíces reales diferentes de una ecuación homogénea con coeficientes constantes",
+                        "Es el caso más sencillo pues si $r_1,r_2$ son la soluciones a&nbsp;<br>$$<br>ar^2 + br +c = 0<br>$$<br>tendremos que las soluciones a la ecuación diferencial&nbsp;<br>$$<br>ay'' + by' + cy = 0<br>$$<br>serán $c_1e^{r_1x}$ y $c_2e^{r_2x}$",
+                        ""
+                    ],
+                    "guid": "zGLwoXy5lc",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Raíces reales iguales de una ecuación homogénea con coeficientes constantes",
+                        "Si $r_1,r_2$ son la soluciones a&nbsp;<br>$$<br>ar^2 + br +c = 0<br>$$<br>y $r_1 = r_2$ entonces tenemos una única solución a<br>$$<br>ay'' + by' + cy = 0<br>$$<br>aplicando reducción de orden con&nbsp; $y_1 = e^{r_1x}$ obtenemos que $y_2 = xe^{r_1x}$",
+                        ""
+                    ],
+                    "guid": "zHuz0fDqJG",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Complejas conjugadas diferentes de una ecuación homogénea con coeficientes constantes",
+                        "Si tenemos soluciones complejas de la forma $r = \\lambda \\pm i \\mu$<br>Entonces tendremos&nbsp;<br>\\begin{align*}<br>e^{(\\lambda \\pm i \\mu)x} &amp;= e^{\\lambda x \\pm i \\mu x}\\\\<br>&amp;=e^{\\lambda x} e^{\\pm i \\mu x}\\\\<br>&amp;=e^{\\lambda x}(cos \\mu x \\pm i sen \\mu x)<br>\\end{align*}<br>Siendo<br>\\begin{align*}<br>y_1 &amp;= c_1 e^{\\lambda x}(cos \\mu x + i sen \\mu x)\\\\<br>&amp;= e^{\\lambda x}(c_1cos \\mu x + i c_1sen \\mu x)\\\\<br>y_2 &amp;= c_2 e^{\\lambda x}(cos \\mu x - i sen \\mu x)\\\\<br>&amp;= e^{\\lambda x}(c_2cos \\mu x - i c_2sen \\mu x)<br>\\end{align*}<br>En virtud de que $c_1+c_2$ y $c_1-c_2$ son constantes tendremos<br>$$<br>y(x) = e^{\\lambda x}(\\kappa_1 cos \\mu x + \\kappa_2 sen \\mu x)<br>$$",
+                        ""
+                    ],
+                    "guid": "Q[*$a^tps[",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Ecuación no homogénea de segundo orden con coeficientes constantes",
+                        "Para encontrar la solución a la ecuación<br>$$<br>ay''+by'+cy = g<br>$$<br>Primero debemos encontrar la solución general $y_c$ de la ecuación<br>$$<br>ay''+by'+cy = 0<br>$$<br>posteriormente debemos encontrar una solución particular $y_p$ de la primera mencionada. Luego cualquier solución será de la forma<br>$$<br>y(x) = y_p + y_c<br>$$",
+                        ""
+                    ],
+                    "guid": "NMx=:cp;t3",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Método de coeficiente indeterminados",
+                        "Dada la ecuación diferencial no homogénea&nbsp;<br>$$<br>ay''+by'+cy=g(x)<br>$$<br>Podemos encontrar $y_p$ si $g(x)$ es la suma/producto de polinomios, exponenciales o senos/cosenos<br>es decir&nbsp;<br>\\begin{equation*}<br>g(x) = \\begin{cases}<br>Pn(x) \\\\<br>e^{\\alpha x}\\\\<br>cosx\\\\<br>sinx\\\\<br>\\end{cases}<br>\\end{equation*}<br>Entonces solo debemos proponer una solución inteligente con cada uno de sus términos con una constante indeterminada, sustituir en la ecuación diferencial y al obtener un sistema de ecuaciones con las constantes, resolverlo.",
+                        ""
+                    ],
+                    "guid": "H`vj`S!hm~",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Método de variación de parámetros",
+                        "En la ecuación diferencial&nbsp;<br>$$<br>y''+py'+qy = g(x)<br>$$<br>Si conocemos el sistema fundamental de soluciones $\\{y_1,y_2\\}$ de la ecuación<br>$$<br>y''+py'+qy = 0<br>$$<br>podemos encontrar la solución particular suponiendola de la forma<br>$$<br>y_p = y_1 u_1(x) + y_2 u_2(x)<br>$$<br>Con lo cuál al diferenciar obtenemos<br>\\begin{align*}<br>y_p' &amp;= y_1' u_1(x)+y_1 u_1'(x)&nbsp;+ y_2' u_2(x) + y_2 u_2'(x)\\\\<br>&amp;=&nbsp; \\left[ y_1' u_1(x) +&nbsp;&nbsp;y_2' u_2(x) \\right] + \\left[ y_1 u_1'(x) + y_2 u_2'(x) \\right] \\\\<br>&amp;= y_1' u_1(x) +&nbsp;&nbsp;y_2' u_2(x)<br>\\end{align*}<br>Suponiendo $y_1 u_1'(x) + y_2 u_2'(x)=0$<br>\\begin{align*}<br>y_p'' &amp;=&nbsp;y_1' u_1'(x) + y_1'' u_1(x)&nbsp;+ y_2' u_2'(x) + y_2'' u_2(x)<br>\\end{align*}<br>Sustituyendo en la ecuación original tenemos<br>\\begin{align*}<br>\\left[ y_1' u_1'(x) + y_2' u_2'(x) +y_1'' u_1(x) + y_2'' u_2(x) \\right] &amp;+\\\\<br>p \\left[ y_1' u_1(x) +&nbsp;&nbsp;y_2' u_2(x) \\right] &amp;+\\\\<br>q \\left[ y_1 u_1(x) + y_2 u_2(x)&nbsp;\\right] &amp;&nbsp;<br>= y_1' u_1'(x) + y_2' u_2'(x)\\\\<br>&amp;= g(x)&nbsp;<br>\\end{align*}<br>De aquí obtenemos un sistema de ecuaciones el cual al resolver obtendremos los valores de $u_1$ y $u_2$ y con ello la solución particular<br>\\begin{align*}<br>\\begin{bmatrix}<br>y_1 &amp; y_2 \\\\<br>y_1' &amp; y_2'<br>\\end{bmatrix}<br>\\begin{bmatrix}<br>u_1' \\\\<br>u_2'<br>\\end{bmatrix}=&nbsp;<br>\\begin{bmatrix}<br>0 \\\\<br>g(x)<br>\\end{bmatrix}<br>\\end{align*}",
+                        ""
+                    ],
+                    "guid": "Al[Jv1|nr_",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
                 }
             ]
         },
@@ -429,7 +517,7 @@
                     "__type__": "Note",
                     "fields": [
                         "Meister's two ears theorem",
-                        "Every polygon of $n\\ge 4$ has at least two nonoverlapping ears.<br><br>A leaft node in the triangulation dual corresponds to an ear. A tree must have at least two leaves.<br><br>Also the upper left vertex and lower right vertex are ears.",
+                        "Every polygon of $n\\ge 4$ has at least two nonoverlapping ears.<br><br>A leaft node in the triangulation dual corresponds to an ear. A tree must have at least two leaves.",
                         ""
                     ],
                     "guid": "m(VH_!TOu-",
@@ -917,7 +1005,7 @@
                 {
                     "__type__": "Note",
                     "fields": [
-                        "Create a BigInt equals to 123456789\\_123456789\\_123456789\\_123456789",
+                        "Create a BigInt equals to 123456789_123456789_123456789_123456789",
                         "use big",
                         "big\"123456789123456789123456789123456789\""
                     ],
@@ -928,7 +1016,7 @@
                 {
                     "__type__": "Note",
                     "fields": [
-                        "Create a BigFloat equals 0.123456789\\_123456789\\_123456789\\_123456789",
+                        "Create a BigFloat equals 0.123456789_123456789_123456789_123456789",
                         "use big",
                         "big\"0.123456789_123456789_123456789_123456789\""
                     ],
@@ -963,7 +1051,7 @@
                     "fields": [
                         "Print \"1\" if $x=9$ is of type Integer",
                         ".",
-                        "if x isa Integer<br>&nbsp; &nbsp; print(1)<br>end"
+                        "if x::Integer == x<br>&nbsp; &nbsp; print(1)<br>end"
                     ],
                     "guid": "i!{>qphbOw",
                     "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
@@ -996,7 +1084,7 @@
                     "fields": [
                         "Create a primitive type Int256 of 256 bits subtype of Integer",
                         ".",
-                        "primitive type Int256 256 &lt;: Integer end"
+                        "primitive type Int256 &lt;: Integer end"
                     ],
                     "guid": "c1HEsxdRjH",
                     "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
@@ -1093,9 +1181,9 @@
                 {
                     "__type__": "Note",
                     "fields": [
-                        "Create a function called \"norm\" that takes p as a Point of type Real and returns 0",
+                        "Create a function called \"norm\" that takes p as a Point of type Real",
                         ".",
-                        "function norm(p::Point{&lt;:Real})<br>&nbsp; &nbsp; return 0<br>end"
+                        "function norm(p::Point{T} where T&lt;:Real)<br>&nbsp; &nbsp; return 0<br>end"
                     ],
                     "guid": "KTpQov{V`G",
                     "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
@@ -1104,7 +1192,7 @@
                 {
                     "__type__": "Note",
                     "fields": [
-                        "What will be the output of following code?",
+                        "What will be the output of following code",
                         "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3\n4\n5\n6\n7\n8</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">struct Point{T}\n\tx<span style=\"color: #666666\">::</span>T\n\ty<span style=\"color: #666666\">::</span>T\n<span style=\"color: #008000; font-weight: bold\">end</span>\n\njulia<span style=\"color: #666666\">&gt;</span> Point{<span style=\"color: #B00040\">AbstractString</span>} <span style=\"color: #666666\">&lt;:</span> Point\njulia<span style=\"color: #666666\">&gt;</span> Point{<span style=\"color: #B00040\">Float64</span>} <span style=\"color: #666666\">&lt;:</span> Point{<span style=\"color: #B00040\">Int64</span>}\njulia<span style=\"color: #666666\">&gt;</span> Point{<span style=\"color: #B00040\">Int8</span>} <span style=\"color: #666666\">&lt;:</span> Point{<span style=\"color: #666666\">&lt;:</span><span style=\"color: #B00040\">Integer</span>}\n</pre></div>\n</td></tr></tbody></table></center><br>",
                         "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\"><span style=\"color: #008000; font-weight: bold\">true</span>\n<span style=\"color: #008000; font-weight: bold\">false</span>\n<span style=\"color: #008000; font-weight: bold\">true</span>\n</pre></div>\n</td></tr></tbody></table></center>"
                     ],
@@ -1137,9 +1225,9 @@
                 {
                     "__type__": "Note",
                     "fields": [
-                        "Create an alias for Point\\{Int8\\} called PInt8",
+                        "Create an alias for Point{Int8} called PointInt8",
                         "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1\n2\n3\n4</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">struct Point{T}\n\tx<span style=\"color: #666666\">::</span>T\n\ty<span style=\"color: #666666\">::</span>T\n<span style=\"color: #008000; font-weight: bold\">end</span>\n</pre></div>\n</td></tr></tbody></table></center><br>",
-                        "const PInt8 = Point{Int8}"
+                        "const PointInt8 = Point{Int8}"
                     ],
                     "guid": "J[H4l]GAX!",
                     "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
@@ -1148,7 +1236,7 @@
                 {
                     "__type__": "Note",
                     "fields": [
-                        "Assert whether x is an Integer",
+                        "Assert wheter x is an Integer",
                         "<center><table class=\"highlighttable\"><tbody><tr><td><div class=\"linenodiv\" style=\"background-color: #f0f0f0; padding-right: 10px\"><pre style=\"line-height: 125%\">1</pre></div></td><td class=\"code\"><div class=\"highlight\" style=\"background: #f8f8f8\"><pre style=\"line-height: 125%\">x<span style=\"color: #666666\">=9</span>\n</pre></div>\n</td></tr></tbody></table></center>",
                         "x isa Integer"
                     ],
@@ -1518,7 +1606,7 @@
                     "__type__": "Note",
                     "fields": [
                         "Función",
-                        "Dado dos conjuntos $A, B$ una función es una relación $R$ donde<br>\\begin{itemize}<br>\\item $\\forall x\\in A,&nbsp; \\exists y: (x, y) \\in R$<br>\\item $(x, z) \\in R, (x, y)\\in R&nbsp; \\Rightarrow y=z$<br>\\end{itemize}",
+                        "Dado dos conjuntos $A, B$ una función es una relación $R$ donde<br>\\begin{itemize}<br>\\item $\\forall x\\in A \\exists y: (x, y) \\in R$<br>\\item $(x, z) \\in R, (x, y)\\in R&nbsp; \\Leftarrow x=z$<br>\\end{itemize}",
                         ""
                     ],
                     "guid": "D1*wmpFcqQ",
@@ -1665,6 +1753,17 @@
                     ],
                     "guid": "c-3mI:#d#D",
                     "note_model_uuid": "e90618a6-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Principio de vacuidad",
+                        "Falta de elementos por comprobar una proposición por lo cuál es verdadera.<br><br>Ejemplo: Todos los triángulos de 9 lados son convexos.",
+                        ""
+                    ],
+                    "guid": "id[u[#9oOA",
+                    "note_model_uuid": "e7b6a32c-9c1a-11ec-af94-d17075e88979",
                     "tags": []
                 }
             ]
@@ -2917,6 +3016,17 @@
                         "df = pd.read_sql(con=conn, sql=\"\"\"show tables;\"\"\")"
                     ],
                     "guid": "tDq`]?Q!X`",
+                    "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
+                    "tags": []
+                },
+                {
+                    "__type__": "Note",
+                    "fields": [
+                        "Save (\"ascii.pkl\") and load (ascii) to a pkl file ascii_lowercase string",
+                        "",
+                        "from string import ascii_lowercase<br>import pickle<br>pickle.dump(ascii_lowercase, file=open(\"ascii.pkl\",\"wb\"))<br>ascii = pickle.load(file=open(\"ascii.pkl\",\"rb\"))"
+                    ],
+                    "guid": "b@SP-/+YDY",
                     "note_model_uuid": "e7b6a388-9c1a-11ec-af94-d17075e88979",
                     "tags": []
                 }
